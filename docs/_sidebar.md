@@ -1,6 +1,2 @@
-<!-- - Getting started
-
-  - [Quick start](quickstart.md)
-  - [Writing more pages](more-pages.md)
-  - [Custom navbar](custom-navbar.md)
-  - [Cover page](cover.md) -->
+- Projeto
+  - [Gerência de configuração](./projeto/gerencia_de_configuracao.md)
