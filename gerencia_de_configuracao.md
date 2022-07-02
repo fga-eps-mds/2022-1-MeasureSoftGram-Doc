@@ -3,6 +3,7 @@
 | Data | Versão | Modificação | Autor |
 | ---- | ------ | ----------- | ----- |
 | 01/07/2022 | 0.1 | Criação do documento | Hugo Sobral | 
+| 02/07/2022 | 0.2 | Adição do tópico de revisão de código | Hugo Sobral | 
 
 ## Introdução
 Este documento tem como objetivo definir e esclarecer quais vão ser as práticas de gerência de configuração adotada para o projeto. Entende-se como gerência de configuração não apenas o sistema de controle de versão utilizado, que em termos práticos será o ```git```, mas também todo o conjunto de práticas e políticas para gerenciar as diversas versões do sistema.
@@ -76,6 +77,13 @@ Commits devem sempre referenciar a issue que estão relacionados, portanto, todo
 #000 - mensagem do commit.
 ```
 Em que ```000``` representa o número da issue relacionada e ```mensagem do commit``` se refere a mensagem do commit escrita em português, sem acentos e no infinitivo. É importante ressaltar que o número escrito no commit, para branches de task, devem adotar o número da tarefa técnica relacionada e não da história de usuário.
+
+## Política de Revisão de código
+Para que um código seja submetida à branch **develop** ou então à **main**, este antes deve passar por uma triagem de revisão de código para que seja garantida a consistência do projeto.
+
+No entando, existe uma sequência pragmática de atividades que deve ser seguida para a revisão do código. Uma vez que uma alteração é feita em branches de **task** ou de **feature**, o código é submetido, pelo **contribuidor**, a revisão de código. Para o caso do MeasureSoftGram, a revisão de código é feita por meio dos recursos disponibilizados pelo **Github**, o **Pull Request**.
+
+Uma vez que um Pull Request é aberto pelo **contribuidor**, uma outra pessoa do time deve ficar responsável pela revisão do código e assume o papel do **revisor**. Caso seja necessário, o revisor aponta mudanças que devem ser realizadas pelo contribuidor. Uma vez que o contribuidor faz as correções apontadas no Pull Request, o revisor volta ao trabalho de revisão e, caso tudo esteja íntegro e consiste, o revisor aprova o **Pull Request** e efetua o merge.
 
 ## Referências
 [1] VALENTE, M. T. Introdução. *In*: VALENTE, M. T. Engenharia de Software Moderna: Princípios e Práticas para Desenvolvimento de Software com Produtividade. 2020. Disponível em: https://engsoftmoderna.info/cap1.html. Acesso em 01/07/2022. 
