@@ -1,2 +1,2 @@
-- Projeto
+- [Projeto MeasureSoftGram](/)
   - [Gerência de configuração](./projeto/gerencia_de_configuracao.md)
