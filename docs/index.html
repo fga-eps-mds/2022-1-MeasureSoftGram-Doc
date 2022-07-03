@@ -7,22 +7,26 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link href="./assets/css/base.css" rel="stylesheet" />
 </head>
 <body>
   <div id="app"></div>
+
   <script>
     window.$docsify = {
+      name: 'MeasureSoftGram',
+      repo: 'https://github.com/fga-eps-mds/2022-1-MeasureSoftGram-Doc',
       loadSidebar: true,
+      coverpage: true,
+      auto2top: true,
       alias: {
         '/.*/_sidebar.md': '/_sidebar.md'
       },
       subMaxLevel: 1,
-      auto2top: true,
-      name: 'MeasureSoftGram',
-      repo: 'https://github.com/fga-eps-mds/2022-1-MeasureSoftGram-Doc'
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
 </body>
 </html>
