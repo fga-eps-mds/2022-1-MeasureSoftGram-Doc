@@ -2,38 +2,53 @@
 
 ## MeasureSoftGram
 
-MeasureSoftGram is free software that aims to monitor quality metrics in order to facilitate decision making.
+MeasureSoftGram é um software livre que almeja monitorar as métricas de qualidade de um produto de software visando fornecer métricas que ajudam na tomada de decisões.
 
-## Why use the MeasureSoftGram?
+## Por que usar o MeasureSoftGram?
 
-The MeasureSoftGram makes the development of a product easier using innovative mathematicians methods to gauge quality between releases.
+O MeasureSoftGram facilita a compreensão da maturidade da qualidade de um software, uma vez que monitorar várias métricas de qualidade no decorrer do tempo. Desta forma a organização interessada no software é capaz de analisar quais pontos ainda precisam de melhorias e quando o software está maduro o suficiente para ser disponibilizado.
 
-## Contribute
+## Como contribuir?
 
-Do you want to contribute with our project? Access our [ADD LINK HERE]() where we explain how you do it.
+<!-- TODO: Adicionar link do guia de contribuição -->
+Caso você se interesse pelo projeto e queira contribuir, acesse o link do nosso [guia de contribuição](#), lá você irá encontrar todos os detalhes.
 
-## Environment
+## Arquitetura do software
 
-Our project is made using the micro services architecture, so, we have three repositories of code:
-- [Service](https://github.com/fga-eps-mds/2021-2-MeasureSoftGram-Service)
-- [CLI](https://github.com/fga-eps-mds/2021-2-MeasureSoftGram-CLI)
-- [Core](https://github.com/fga-eps-mds/2021-2-MeasureSoftGram-Core)
+O software MeasureSoftGram é baseado na arquitetura de microsserviços, ou seja, o processamento é distribuído em vários módulos independentes que trabalham em conjunto para fornecer um resultado final.
 
-To run our project it is necessary to follow the detailed steps in each repository.
+Atualmente os principais módulos já visualizados são:
+- [Service](https://github.com/fga-eps-mds/2021-2-MeasureSoftGram-Service): Serviço que realiza a conexão com o banco de dados e mantém o registros das métricas analisadas
+- [Core](https://github.com/fga-eps-mds/2021-2-MeasureSoftGram-Core): Serviço que abstrai o modelo matemático que computa os resultados das métricas.
+- [CLI](https://github.com/fga-eps-mds/2021-2-MeasureSoftGram-CLI): Aplicação de linha de comando que realiza a integração com a fonte das métricas de quailidade (hoje o json obtido na API do SonarCube).
+- **Dashboard**: Aplicação web que irá apresentar as métricas de qualidade em gráficos.
 
-## License
 
-AGPL-3.0 License
+Para rodar o projeto localmente siga os passos abaixo:
 
-## Documentation
+```
+$ ???
+```
 
-The documentation of this project can be accessed at this website: [Documentation](https://github.com/fga-eps-mds/2022-1-MeasureSoftGram-Doc/new/main).
 
-# More Informations
-For more informations about the MeasureSoftGram access this website: [ADD GITHUB IO LINK HERE]().
+## Licença
 
-## Colaborators
-| Subject | Registration | Name | GitHub | E-mail |
+[AGPL-3.0 License](https://github.com/fga-eps-mds/2022-1-MeasureSoftGram-Doc/blob/main/LICENSE)
+
+## Documentação
+
+A documentação detalhada desse projeto pode ser encontrada nos seguintes repositórios:
+
+- [Documentação da equipe do semestre 2022/01](https://github.com/fga-eps-mds/2022-1-MeasureSoftGram-Doc)
+- [Documentação da equipe do semestre 2021/02](https://github.com/fga-eps-mds/2021-2-MeasureSoftGram-Doc)
+
+
+## Outras informações
+
+Para mais informações consulte a página web do projeto no [link](https://fga-eps-mds.github.io/2022-1-MeasureSoftGram-Doc)
+
+### Colaboradores
+| Disciplina | Matrícula | Nome | GitHub | E-mail |
 |:--:|:--:|:--:|:--:|:--:|
 | EPS | 160005191 | Durval Carvalho de Souza	| [@durvalcarvalho](https://github.com/durvalcarvalho)
 | EPS | 180018604 | Hugo Sobral de Lima Salomao	| [@KiSobral](https://github.com/KiSobral)
@@ -48,7 +63,7 @@ For more informations about the MeasureSoftGram access this website: [ADD GITHUB
 
 ## Ferramentas utilizadas durante o projeto
 
- Icons  |  Nome  | Funcionalidades no projeto|
+ Logo |  Nome  | Funcionalidades no projeto |
  ---- | ---- | ---- |
 <img src="https://docsify.js.org/_media/icon.svg" alt="Docsify" href="https://docsify.js.org/" width="200"> |  Docsify  | O docsify é um gerador de páginas estáticas sob demanda. No nosso projeto ele foi configurado para realizar o transpilação de arquivos em Markdown para páginas HTML, foi utilizado em conjunto com o github pages. |
 <img src="assets/images/tools/github.png" alt="Github" href="https://github.com" width="200"> |    Github    | O Github é uma excelente ferramenta para controle de versionamento e armazenamento dos arquivos de documentação. |
