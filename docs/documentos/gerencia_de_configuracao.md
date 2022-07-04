@@ -2,8 +2,8 @@
 ## Histórico de versão
 | Data | Versão | Modificação | Autor |
 | ---- | ------ | ----------- | ----- |
-| 01/07/2022 | 0.1 | Criação do documento | Hugo Sobral | 
-| 02/07/2022 | 0.2 | Adição do tópico de revisão de código | Hugo Sobral | 
+| 01/07/2022 | 0.1 | Criação do documento | Hugo Sobral |
+| 02/07/2022 | 0.2 | Adição do tópico de revisão de código | Hugo Sobral |
 
 ## Introdução
 Este documento tem como objetivo definir e esclarecer quais vão ser as práticas de gerência de configuração adotada para o projeto. Entende-se como gerência de configuração não apenas o sistema de controle de versão utilizado, que em termos práticos será o ```git```, mas também todo o conjunto de práticas e políticas para gerenciar as diversas versões do sistema.
@@ -21,10 +21,10 @@ Os números em ```X``` sofrem incrementos toda vez que uma nova release com func
 ## Fluxo de Trabalho
 Para o fluxo de trabalho adotado pela equipe, utilizaremos o **gitflow**, também conhecido como **git workflow**. O **gitflow** é um fluxo de trabalho para padronização e definição de responsabilidades de branches. O gitflow mostra seu valor quando utilizado em projetos com a necessidade da paralelização do trabalho, isto é, quando é necessário que várias pessoas implementem várias partes do código dentro de uma mesma iteração de desenvolvimento.
 
-![Gitflow](../assets/images/gitflow-feature-develop.png)    
-##### Figura 1: Exemplo de fluxo de branches no gitflow     
+![Gitflow](../assets/images/gitflow-feature-develop.png)
+##### Figura 1: Exemplo de fluxo de branches no gitflow
 
-Como exemplificado na figura acima, temos um fluxo de trabalho centralizado nas branches **main** e **develop**. A branch main fica responsável por manter o código estável do projeto enquando a branch develop recebe as atualizações provenientes das branches de **feature** e de **bugfix**. Caso seja necessária a atualização de algum defeito mapeado diretamente na main, são criadas branches de **hotfix** para correções rápidas e menos burocráticas. 
+Como exemplificado na figura acima, temos um fluxo de trabalho centralizado nas branches **main** e **develop**. A branch main fica responsável por manter o código estável do projeto enquanto a branch develop recebe as atualizações provenientes das branches de **feature** e de **bugfix**. Caso seja necessária a atualização de algum defeito mapeado diretamente na main, são criadas branches de **hotfix** para correções rápidas e menos burocráticas.
 
 A branch ```main```: esta é a branch principal do projeto. Nesta branch estão contidas as **Releases major** e os **Patches** do projeto. Para que um código chegue até a branch main, este deve antes estar estável.
 
@@ -45,7 +45,7 @@ Para branches de **hotfix**, adotaremos o padrão:
 ```
 hotfix-000-nome_do_hotfix
 ```
-Onde ```000``` representa o número da issue e ```nome_do_hotfix``` representa o nome do hotfix escrito em snake case.   
+Onde ```000``` representa o número da issue e ```nome_do_hotfix``` representa o nome do hotfix escrito em snake case.
 
 <br/>
 
@@ -53,7 +53,7 @@ Para branches de **bugfix**, adotaremos o padrão:
 ```
 bugfix-000-nome_do_bugfix
 ```
-Onde ```000``` representa o número da issue e ```nome_do_bugfix``` representa o nome do bugfix escrito em snake case.  
+Onde ```000``` representa o número da issue e ```nome_do_bugfix``` representa o nome do bugfix escrito em snake case.
 
 <br/>
 
@@ -81,10 +81,10 @@ Em que ```000``` representa o número da issue relacionada e ```mensagem do comm
 ## Política de Revisão de Código
 Para que um código seja submetida à branch **develop** ou então à **main**, este antes deve passar por uma triagem de revisão de código para que seja garantida a consistência do projeto.
 
-No entando, existe uma sequência pragmática de atividades que deve ser seguida para a revisão do código. Uma vez que uma alteração é feita em branches de **task** ou de **feature**, o código é submetido, pelo **contribuidor**, a revisão de código. Para o caso do MeasureSoftGram, a revisão de código é feita por meio dos recursos disponibilizados pelo **Github**, o **Pull Request**.
+No entanto, existe uma sequência pragmática de atividades que deve ser seguida para a revisão do código. Uma vez que uma alteração é feita em branches de **task** ou de **feature**, o código é submetido, pelo **contribuidor**, a revisão de código. Para o caso do MeasureSoftGram, a revisão de código é feita por meio dos recursos disponibilizados pelo **Github**, o **Pull Request**.
 
 Uma vez que um Pull Request é aberto pelo **contribuidor**, uma outra pessoa do time deve ficar responsável pela revisão do código e assume o papel do **revisor**. Caso seja necessário, o revisor aponta mudanças que devem ser realizadas pelo contribuidor. Uma vez que o contribuidor faz as correções apontadas no Pull Request, o revisor volta ao trabalho de revisão e, caso tudo esteja íntegro e consiste, o revisor aprova o **Pull Request** e efetua o merge.
 
 ## Referências
-[1] VALENTE, M. T. Introdução. *In*: VALENTE, M. T. Engenharia de Software Moderna: Princípios e Práticas para Desenvolvimento de Software com Produtividade. 2020. Disponível em: https://engsoftmoderna.info/cap1.html. Acesso em 01/07/2022.    
+[1] VALENTE, M. T. Introdução. *In*: VALENTE, M. T. Engenharia de Software Moderna: Princípios e Práticas para Desenvolvimento de Software com Produtividade. 2020. Disponível em: https://engsoftmoderna.info/cap1.html. Acesso em 01/07/2022.
 [2] MANSI. Introduction to Gitflow. Knóldus, 2021. Disponível em: https://blog.knoldus.com/introduction-to-git-flow/#:~:text=Git%20Flow%20is%20an%20abstract,framework%20for%20managing%20larger%20projects. Acesso em 01/07/2022.
