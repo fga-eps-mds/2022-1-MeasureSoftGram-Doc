@@ -1,2 +1,3 @@
 - [Projeto MeasureSoftGram](/)
-  - [Gerência de configuração](./projeto/gerencia_de_configuracao.md)
+  - [Gerência de configuração](./documentos/gerencia_de_configuracao.md)
+  - [Plano de comunicação](./documentos/plano_de_comunicacao.md)
