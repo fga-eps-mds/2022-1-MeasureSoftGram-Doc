@@ -37,7 +37,7 @@ Para comunicação entre os membros da equipe de desenvolvimento, além do canal
 
 Por mais que exista um grupo no Telegram com somente os membros da equipe de desenvolvimento, ficou definido que as dúvidas e discussões deverão ser feitas no grupo no Discord ou na plataforma de hospedagem de código GitHub. Essa decisão foi feita visando dar visibilidade a todos os interessados do projeto.
 
-Além das comunicações assíncronas citadas acima, também são realizadas duas reuniões semanais de pronto de controle (_dailies_), com o objetivo de dar visibilidade ao andamento e aos impeditivos das tarefas realizadas na semana. Estas reuniões são feitas após a aula de Engenharia de Produto de Software, e são planejadas para durarem no máximo 15 minutos. Essas _dailies_ são guiadas pelas 3 seguintes perguntas:
+Além das comunicações assíncronas citadas acima, também são realizadas duas reuniões semanais de ponto de controle (_dailies_), com o objetivo de dar visibilidade ao andamento e aos impeditivos das tarefas realizadas na semana. Estas reuniões são feitas após a aula de Engenharia de Produto de Software, e são planejadas para durarem no máximo 15 minutos. Essas _dailies_ são guiadas pelas 3 seguintes perguntas:
 
 * O que eu já fiz?
 * O que eu estou fazendo?
@@ -66,5 +66,6 @@ Uma vez definido o plano de comunicação ficou claro que durante a execução d
 
 Deste modo, esta seção deste documento visa definir os cronogramas de reuniões fixas.
 
-* Toda segunda-feira às 19h30 às 21h serão realizadas as reuniões de planejamento.
+* Toda segunda-feira das 20h às 21h30 é realizado uma reunião de ponto de controle com o cliente do projeto.
+
 * Todas terças e quintas, por volta das 16h05 até as 16h20 serão realizadas as dailies.
