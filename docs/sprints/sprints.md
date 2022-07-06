@@ -2,4 +2,4 @@
 
 ## Sprint 0
 
-- [Planejamento](/docs/sprints/sprint0/planejamento.md)
+- [Planejamento](./sprints/sprint0/planejamento.md)
