@@ -1,11 +1,12 @@
 # Plano de comunicação
 
-##### Histórico de revisões
+## Histórico de versão
 
 | Data | Autor | Descrição da revisão | Versão |
 | :--: | :---: | :------------------: | :----: |
-| 03 de julho de 2022 | **Durval Carvalho** | Inclusão da documentação | 1.0.0 |
-| 04 de julho de 2022 | **Durval Carvalho** | Revisões no texto | 1.0.1 |
+| 03 de julho de 2022 | **Durval Carvalho** | Inclusão da documentação     | 1.0.0 |
+| 04 de julho de 2022 | **Durval Carvalho** | Revisões no texto            | 1.0.1 |
+| 06 de julho de 2022 | **Hugo Sobral**     | Pequena revisão no documento | 1.0.2 |
 
 ## Objetivo do documentos
 
@@ -62,10 +63,10 @@ Um exemplo de documentação já realizada pode ser vista na issue [[#50]](https
 
 ## Cronogramas de reuniões fixas
 
-Uma vez definido o plano de comunicação ficou claro que durante a execução deste projeto irá ocorrer comunicações síncronas e assíncronas. A maioria das comunicações síncronas irão ocorrer na forma de videochamadas, sendo que algumas delas são previamente definidas.
+Uma vez definido o plano de comunicação, ficou claro que durante a execução deste projeto irão ocorrer comunicações síncronas e assíncronas. A maioria das comunicações síncronas irão ocorrer na forma de videochamadas, sendo que algumas delas são previamente definidas.
 
 Deste modo, esta seção deste documento visa definir os cronogramas de reuniões fixas.
 
-* Toda segunda-feira das 20h às 21h30 é realizado uma reunião de ponto de controle com o cliente do projeto.
+* Toda segunda-feira das 20h às 21h00 é realizado uma reunião de ponto de controle com o cliente do projeto.
 
 * Todas terças e quintas, por volta das 16h05 até as 16h20 serão realizadas as dailies.
