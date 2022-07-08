@@ -1,6 +1,7 @@
 - [Projeto MeasureSoftGram](/)
   - [Gerência de configuração](./documentos/gerencia_de_configuracao.md)
   - [Plano de comunicação](./documentos/plano_de_comunicacao.md)
+  - [Analise de risco](./documentos/analise_de_risco.md)
 - [Sprints](./sprints/sprints.md)
   - Sprint 0
     - [Planejamento](./sprints/sprint0/planejamento.md)
