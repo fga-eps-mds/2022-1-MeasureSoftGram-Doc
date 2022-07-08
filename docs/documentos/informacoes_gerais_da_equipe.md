@@ -2,15 +2,16 @@
 
 ## Histórico de versão
 
-|        Data         |       Autor        |   Descrição da revisão   | Versão |
-| :-----------------: | :----------------: | :----------------------: | :----: |
-| 08 de julho de 2022 | **Leonardo Gomes** | Inclusão da documentação | 1.0.0  |
+|        Data         |       Autor        |          Descrição da revisão          | Versão |
+| :-----------------: | :----------------: | :------------------------------------: | :----: |
+| 08 de julho de 2022 | **Leonardo Gomes** |        Inclusão da documentação        | 1.0.0  |
+| 08 de julho de 2022 | **Leonardo Gomes** | Capitalização dos titulos no documento | 1.0.1  |
 
-## Objetivo do documento
+## Objetivo do Documento
 
 Este documento tem como objetivo registrar as informações coletadas sobre a equipe durante o período letivo de 2022 primeiro semestre da Universidade de Brasília, a fim de poder ser usado como insumo para definição de outros artefatos e decisões a respeito do projeto.
 
-## Heatmap de horário
+## Heatmap de Horário
 
 Heatmap é um mapa de calor, que define a disponibilidade de horários pré estabelecido para haver uma facilidade no agendamento de encontros pela equipe. Para a criação deste documento, foi utilizado o Google Sheets, tendo em vista a facilidade de compartilhamento e as ferramentas nele oferecidas.
 
@@ -26,7 +27,7 @@ Após os quadros serem preenchidos, é gerado o heatmap, onde as cores quentes r
 
 ##### Figura 2: Heatmap de horário da equipe
 
-## Quadro de conhecimento
+## Quadro de Conhecimento
 
 O quadro de conhecimento se propõe a esclarecer o entendimento de cada membro sobre _soft_ e _hard skills_ pré estabelecidas pela própria equipe. Foi utilizado o Google Sheets com o intuito de facilitar o compartilhamento do arquivo. Após estabelecer os conhecimentos que devem ser explorados nesta atividade, cada membro deve se auto avaliar e preencher o quadro com as seguintes informações:
 
