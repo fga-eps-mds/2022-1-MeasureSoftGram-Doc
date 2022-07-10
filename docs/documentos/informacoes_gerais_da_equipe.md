@@ -6,6 +6,7 @@
 | :-----------------: | :----------------: | :------------------------------------: | :----: |
 | 08 de julho de 2022 | **Leonardo Gomes** |        Inclusão da documentação        | 1.0.0  |
 | 08 de julho de 2022 | **Leonardo Gomes** | Capitalização dos titulos no documento | 1.0.1  |
+| 10 de julho de 2022 | **Durval Carvalho** | Revisão do documento | 1.0.2  |
 
 ## Objetivo do Documento
 
@@ -13,9 +14,9 @@ Este documento tem como objetivo registrar as informações coletadas sobre a eq
 
 ## Heatmap de Horário
 
-Heatmap é um mapa de calor, que define a disponibilidade de horários pré estabelecido para haver uma facilidade no agendamento de encontros pela equipe. Para a criação deste documento, foi utilizado o Google Sheets, tendo em vista a facilidade de compartilhamento e as ferramentas nele oferecidas.
+Um mapa de calor (_heatmap_) é uma técnica de visualização de dados que mostra a magnitude de um fenômeno como cor em duas dimensões. A variação de cor permite a compreensão rápida de como o fenômeno está agrupado.
 
-Para a execução dessa atividade, cada membro da equipe precisou responder um quadro de horário para cada horário como "Livre", se houvesse disponibilidade, e "Ocupado", para quando não houvesse disponibilidades.
+Essa técnica de visualização foi utilizada para compreender como os horários livres dos membros da equipe estavam distribuidos. Para a criação deste mapa de calor foi utilizado o Google Sheets, onde cada membro da equipe preencheu um quadro de horários com "Livre", se houvesse disponibilidade, e "Ocupado", para quando não houvesse disponibilidades.
 
 ![Exemplo_de_resposta_para_o_heatmap](../assets/images/informacoes_gerais_da_equipe/exemplo_de_resposta.png)
 
@@ -45,4 +46,4 @@ Além do próprio quadro, foi gerado um gráfico com as informações de conheci
 
 ![grafico_sobre_o_conhecimento_geral_da_equipe](../assets/images/informacoes_gerais_da_equipe/grafico_sobre_o_conhecimento_geral_da_equipe.png)
 
-##### Figura 5: Resultado do quadro de conhecimento da equipe
+<!-- ##### Figura 5: Resultado do quadro de conhecimento da equipe -->
