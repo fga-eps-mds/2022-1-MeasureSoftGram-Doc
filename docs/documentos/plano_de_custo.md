@@ -1,4 +1,4 @@
-# Plano de custo
+# Custos de projeto
  
 ## Histórico de versão
  
@@ -69,5 +69,3 @@ O custo para manter 10 fontes de notebook operando por 24h durante 3 meses será
 [4] VIEIRA, Leticia; Disponível em: 6 maneiras de economizar na conta de luz do home office. https://cultura.uol.com.br/noticias/26097_6-maneiras-de-economizar-na-conta-de-luz-do-home-office.html. Acesso em 12/07/2022.
  
 [5]Tabela de tarifas de energia elétrica. Disponível em: https://www.neoenergiabrasilia.com.br/residencial-e-rural/Documents/2022-04-tarifas-abril/Grupo-B.pdf. Acesso em 12/07/2022.
- 
-
