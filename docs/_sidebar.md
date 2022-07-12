@@ -1,4 +1,5 @@
 - [Projeto MeasureSoftGram](/)
+  - [Análise de risco](./documentos/analise_de_risco.md)
   - [Custo de projeto](./documentos/plano_de_custo.md)
   - [Fluxo de processos](./documentos/fluxo_de_processos.md)
   - [Gerência de configuração](./documentos/gerencia_de_configuracao.md)
