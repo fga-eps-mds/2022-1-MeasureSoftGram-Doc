@@ -3,17 +3,43 @@
 | Data | Versão | Modificação | Autor |
 | ---- | ------ | ----------- | ----- |
 | 01/07/2022 | 1.0.0 | Criação do documento | Hugo Sobral |
+| 12/07/2022 | 1.1.0 | Inclusão da metodologia e dos papeis no documento | Hugo Sobral |
 
 ## Introdução
 
 Este documento tem como objetivo definir e detalhar quais e como são aplicados os processos no projeto do MeasureSoftGram. O escopo do documento engloba desde a parte das metodologias adotadas assim como a forma que ocorre a interação entre os ritos das metodologias e o fluxo de trabalho da equipe.
 
 
-## Metodologias
+## Metodologia
 
-SCRUM
+A metodologia adotada para o projeto é o Scrum. Em síntese, o Scrum é um framework para explorar, de maneira efetiva, o trabalho colaborativo entre um time para o desenvolvimento de produtos complexos. O Scrum é uma metodologia ágil que consiste em ritos, papeis e artefatos usados para construir uma cultura organizacional dentro de uma equipe.
 
-PAPÉIS DO SCRUM (ROTATIVOS)
+O escopo deste documento abrange uma explicação sobre os papéis usados no projeto e, também, no detalhamento dos ritos adotados para a metodologia.
+
+## Papéis
+
+Antes de detalhar cada um dos papéis da metodologia, é preciso antes ressaltar que, para o contexto do projeto do MeasureSoftGram, os papéis são rotativos e que todos da equipe devem estar responsáveis pela manutenção da metodologia. 
+
+### Scrum Master
+
+O Scrum Master é o membro responsável por potencializar o trabalho da equipe e garantir que todos entendam e apliquem os princípios do framework.
+
+### Product Owner
+
+O Product Owner é o membro responsável por definir estórias e priorizar o backlog do produto. Ele também é responsável por manter a integridade conceitual das novas funcionalidades, bugs ou melhorias, para que essas sigam uma visão definida para o produto ou projeto.
+
+### DevOps
+
+O DevOps é o membro responsável por facilitar a implantação de práticas alinhadas com os princípios e a filosofia DevOps, isto é, implantar práticas como:
+- Integração Contínua;
+- Entrega Contínua;
+- Estruturação dos microsserviços;
+- Manter a infraestrutura como código;
+- Manter o monitoramento e registro dos logs.
+
+### Arquiteto
+
+O arquiteto é o membro responsável por mapear o funcionamento do sistema. É quem identifica possíveis problemas e apresenta soluções efetivas. O arquiteto tem como foco garantir a conformidade dos processos, das documentações e guias, direcionando a equipe nas atividades.
 
 
 ## Ritos
