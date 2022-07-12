@@ -2,17 +2,19 @@
 
 ## Histórico de versão
 
-|        Data         |       Autor        |      Descrição da revisão      | Versão |
-| :-----------------: | :----------------: | :----------------------------: | :----: |
-| 03 de julho de 2022 | **Danillo Souza**  |      Criação do documento      | 1.0.0  |
-| 08 de julho de 2022 | **Leonardo Gomes** | Ajuste no histórico de versão  | 1.0.1  |
-| 08 de julho de 2022 | **Leonardo Gomes** | Ajustes estruturais do arquivo | 1.0.2  |
-| 11 de julho de 2022 | **Danillo Souza**  |   Adicionado matriz de risco   | 1.0.3  |
-| 11 de julho de 2022 | **Danillo Souza**  |  Adicionado planilha de risco  | 1.0.4  |
+|        Data         |       Autor        |        Descrição da revisão         | Versão |
+| :-----------------: | :----------------: | :---------------------------------: | :----: |
+| 03 de julho de 2022 | **Danillo Souza**  |        Criação do documento         | 1.0.0  |
+| 08 de julho de 2022 | **Leonardo Gomes** |    Ajuste no histórico de versão    | 1.0.1  |
+| 08 de julho de 2022 | **Leonardo Gomes** |   Ajustes estruturais do arquivo    | 1.0.2  |
+| 11 de julho de 2022 | **Danillo Souza**  |     Adicionado matriz de risco      | 1.0.3  |
+| 11 de julho de 2022 | **Danillo Souza**  |    Adicionado planilha de risco     | 1.0.4  |
+| 12 de julho de 2022 |  **Hugo Sobral**   |  Proposta de melhoria do documento  | 1.0.5  |
+| 12 de julho de 2022 | **Leonardo Gomes** | Ajustes textuais e impacto de risco | 1.0.6  |
 
 ## Estrutura Analítica de Riscos
 
-Para que seja possível identificar de forma mais simples os possíveis riscos durante o projeto MeasureSoftGram durante o semestre de 2022/1, foi elaborado o diagrama da Estrutura Analítica de Riscos.
+Para que seja possível identificar de forma mais simples os possíveis riscos do projeto MeasureSoftGram durante o semestre de 2022/1, foi elaborado o diagrama da Estrutura Analítica de Riscos.
 
 A Estrutura Analítica de Riscos (EAR) é uma ferramenta pela qual é possível agrupar os riscos e organizá-los em categorias. Cada categoria é então dividida em níveis, sendo que cada nível detalha a fonte de riscos para o projeto. Portanto, a EAR é uma estrutura hierárquica de possíveis fontes de risco.
 
@@ -52,7 +54,7 @@ Ao analisar o diagrama pode-se extrair os seguintes possíveis riscos:
 
 ## Matriz de risco
 
-Para interpretar os dados que virão a logo abaixo, na planilha de risco, foi desenvolvida a seguinte matriz.
+Para interpretar os dados que virão a seguir, na planilha de risco, foi desenvolvida a seguinte matriz.
 
 ![Matriz de Riscos](../assets/images/analise_de_risco/matrizDeRisco.png)
 
@@ -70,7 +72,7 @@ Para interpretar os dados que virão a logo abaixo, na planilha de risco, foi de
 
 | ID  | Risco                                                                                               | Probabilidade | Impacto | Prevenção | Plano de ação                                                                         |
 | --- | --------------------------------------------------------------------------------------------------- | ------------- | ------- | --------- | ------------------------------------------------------------------------------------- |
-| R4  | Indisponibilidade do cliente ao decorrer do projeto                                                 | Alto          | Médio   | -         | Sempre que for possível ou necessário, obter o máximo de informação do cliente assim. |
+| R4  | Indisponibilidade do cliente ao decorrer do projeto                                                 | Alto          | Alto    | -         | Sempre que for possível ou necessário, obter o máximo de informação do cliente assim. |
 | R5  | Algum integrante do time pode ficar indisponível                                                    | Alto          | Médio   | -         | Adaptar trabalho do time quando houver necessidade                                    |
 | R6  | Demandas na vida profissional e faculdade dos integrantes do time podem afetar andamento do projeto | Alto          | Baixo   | -         | Time deve planejar bem seus horários e disponibilidades                               |
 
