@@ -15,9 +15,9 @@ Do you want to contribute with our project? Access our [ADD LINK HERE]() where w
 ## Environment
 
 Our project is made using the micro services architecture, so, we have three repositories of code:
-- [Service](https://github.com/fga-eps-mds/2021-2-MeasureSoftGram-Service)
-- [CLI](https://github.com/fga-eps-mds/2021-2-MeasureSoftGram-CLI)
-- [Core](https://github.com/fga-eps-mds/2021-2-MeasureSoftGram-Core)
+- [Service](https://github.com/fga-eps-mds/2022-1-MeasureSoftGram-Service)
+- [CLI](https://github.com/fga-eps-mds/2022-1-MeasureSoftGram-CLI)
+- [Core](https://github.com/fga-eps-mds/2022-1-MeasureSoftGram-Core)
 
 To run our project it is necessary to follow the detailed steps in each repository.
 
