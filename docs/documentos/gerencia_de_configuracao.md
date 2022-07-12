@@ -2,8 +2,8 @@
 ## Histórico de versão
 | Data | Versão | Modificação | Autor |
 | ---- | ------ | ----------- | ----- |
-| 01/07/2022 | 0.1 | Criação do documento | Hugo Sobral |
-| 02/07/2022 | 0.2 | Adição do tópico de revisão de código | Hugo Sobral |
+| 01/07/2022 | 0.1.0 | Criação do documento | Hugo Sobral |
+| 02/07/2022 | 1.0.0 | Adição do tópico de revisão de código | Hugo Sobral |
 
 ## Introdução
 Este documento tem como objetivo definir e esclarecer quais vão ser as práticas de gerência de configuração adotada para o projeto. Entende-se como gerência de configuração não apenas o sistema de controle de versão utilizado, que em termos práticos será o ```git```, mas também todo o conjunto de práticas e políticas para gerenciar as diversas versões do sistema.
