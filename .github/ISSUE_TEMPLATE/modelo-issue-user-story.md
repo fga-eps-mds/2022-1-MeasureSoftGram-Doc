@@ -7,7 +7,7 @@ Título: User-Story
 
 ## História do usuário
 
-Aqui a história do usuário
+<!-- Aqui a história do usuário -->
 
 ## Critérios de aceitação
 
