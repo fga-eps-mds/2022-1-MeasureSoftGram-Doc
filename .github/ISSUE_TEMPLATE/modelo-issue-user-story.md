@@ -5,17 +5,24 @@ Título: User-Story
 
 ---
 
-# História do usuário
+## História do usuário
 
-Como..., eu quero..., para que eu possa...
+Aqui a história do usuário
 
-*Idealmente, isso está no título da edição, mas se não, você pode colocá-lo aqui. Em caso afirmativo, exclua esta seção.*
+## Critérios de aceitação
 
-# Critérios de aceitação
+### Cenário: nome_do_cenário
+| Passo | Ação | Resultado esperado |
+| ----- | ---- | ------------------ |
+| 01 | **Dado que** ... | - |
+| 02 | **Quando** ... | **Então** ... |
+| 03 | - | **Então** ... |
+| 04 | - | **E** ... |
+| 05 | - | **Mas** ... | 
 
-- [ ] Algo que pode ser verificado para mostrar que essa história de usuário está satisfeita.
+## Tarefas:
 
-# Defeitos e melhorias
+- [ ] Tarefa 1
+- [ ] Tarefa 2
+- [ ] Tarefa 3
 
-1. - [ ] Critérios de aceitação não foram bem definidos
-2. - [ ] Etc....
