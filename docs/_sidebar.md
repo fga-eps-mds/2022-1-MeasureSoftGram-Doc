@@ -5,6 +5,7 @@
   - [**Gerência de configuração**](/documentos/gerencia_de_configuracao.md)
   - [**Plano de comunicação**](/documentos/plano_de_comunicacao.md)
   - [**Agenda de trabalho e ferramentas**](/documentos/agenda_de_trabalho_e_ferramentas.md)
+  - [Guia de Contribuição](./documentos/guia_de_contribuicao.md)
 
 - [**Gestão do Projeto**](/semanas/_index.md)
   - [Semana 1](/semanas/semana_01.md)
