@@ -4,11 +4,32 @@
 | :-----------------: | :---------------: | :-------------------------------: | :----: |
 | 12 de julho de 2022 | **Danillo Souza** |     Inclusão da documentação      | 0.1.0  |
 | 12 de julho de 2022 | **Danillo Souza** | Inclusão do diagrama arquitetural | 0.2.0  |
+| 13 de julho de 2022 | **Danillo Souza** | Inclusão do tópico de tecnologias | 0.3.0  |
 
 ## Introdução
 
 A finalidade deste documento é detalhar as decisões arquiteturais do MeasureSoftGram utilizando diferentes visões arquiteturais, a fim de facilitar o entendimento dos processos envolvidos no desenvolvimento e todo o funcionamento do produto e além disso dar atualizar a [documentação original](https://fga-eps-mds.github.io/2021-2-MeasureSoftGram-Doc/docs/artifact/sad) do projeto.
 Nesse documento, estão descritos os componentes, tecnologias e diferentes visões arquiteturais do MeasureSoftGram.
+
+## Tecnologias
+
+### Frontend
+
+- **React Native**: Framework em JavaScript e que possui suporte a TypeScript, desenvolvido pelo Facebook. Possibilita a criação de páginas web de forma simples e mais rápida que o clássico HTML, CSS e JavaScript.
+
+- **Python**: Linguagem de programação alto nível que possibilita a estabilidade de projetos que podem ser altamente escalaveis. Pode ser usada para criar interfaces simples no terminal de computadores.
+
+### Backend
+
+- **Django**: Framework open source baseado em Python. Desenvolvido com o intuito de reslver problemas comuns durante o desenvolvimento web. Altamente escalavel e robusto.
+
+- **Jupyter Notebook**: É uma ferramenta open source que possibilita a criação e manipulação de Notebooks. Tecnologia baseada em Python.
+
+### Banco de dados
+
+- **PostgreSQL**: Sistema gerenciador de banco de dados relacionais de código aberto. Tem função de gerenciar dados de maneira organizada e eficaz.
+
+<!-- TODO: Limitações arq -->
 
 ## Diagrama arquitetural
 
@@ -16,4 +37,14 @@ Nesse documento, estão descritos os componentes, tecnologias e diferentes visõ
 
 ## Referência
 
-[1] MARIOTTI,Flávio Secchieri; Como documentar a Arquitetura de Software. Disponível em: http://www.linhadecodigo.com.br/artigo/3343/como-documentar-a-arquitetura-de-software.aspx. Acessado em: 12/07/2022.
+[1] MARIOTTI, Flávio Secchieri; Como documentar a Arquitetura de Software. Disponível em: http://www.linhadecodigo.com.br/artigo/3343/como-documentar-a-arquitetura-de-software.aspx. Acessado em: 12/07/2022.
+
+[2] ROVEDA, Ugo; O que é Django, para que serve e como usar este framework. Disponível em: https://kenzie.com.br/blog/djang/o. Acessado em: 13/07/2022.
+
+[3] ROVEDA, Ugo; React: O que é, como funciona e porque usar e como aprender. Disponível em: https://kenzie.com.br/blog/react/. Acessado em: 13/07/2022.
+
+[4] SOUZA, Ivan de; PostgreSQL: saiba o que é, para que serve e como instalar. Disponível em: https://rockcontent.com/br/blog/postgresql/. Acessado em: 13/07/2022.
+
+[5] KRIGER, Kriger; O que é Python, para que serve e por que aprender?. Disponível em: https://kenzie.com.br/blog/o-que-e-python/. Acessado em: 13/07/2022.
+
+[6] Jupyter Notebook: o que é e como usar. Disponível em: https://www.buscape.com.br/pc-computador/conteudo/jupyter-notebook-o-que-e-como-usar. Acessado em: 13/07/2022.
