@@ -8,26 +8,26 @@
 
 ## Objetivo do documento
 
-Este documento visa definir como se deu a organização em relação a disponibilidade dos membros para trabalharem no desenvolvimento do projeto, além disso, apresenta as ferramentas utilizadas pela equipe para a realização das tarefas.
+Este documento visa definir como se deu a organização em relação a disponibilidade dos membros para trabalharem no desenvolvimento do projeto. Além disso, este documento apresenta as ferramentas utilizadas pela equipe para a realização das tarefas.
 
 ## Agenda de trabalho
 
 Para estabelecer o horário de trabalho da equipe, primeiramente, foi solicitado o preenchimento de uma planilha com a disponibilidade de horário de cada membro do time. A figura a seguir apresenta a quantidade de integrantes do time disponível em cada horário:
 
 ![agenda](../assets/images/agenda_e_ferramentas/agenda.png).
- 
+
 Em seguida, foi definido agenda para a realização das reuniões com o cliente e demais rituais adotados pelo time:
- 
+
 * Toda segunda-feira das 20h às 21h00 é realizada uma reunião de ponto de controle com o cliente do projeto.
- 
+
 * Todas terças e quintas, por volta das 16h05 até as 16h20 serão realizadas as dailies.
- 
+
 Maiores detalhes relacionados a realização dessas reuniões e demais comunicações da equipe, estão descritos no documento [Plano de Comunicação](./plano_de_comunicacao.md).
 
 
 ## Ferramentas
 
-Durante o desenvolvimento do projeto serão realizadas diversas tarefas, cada uma com seu objetivo específico e possuindo diferentes formas de elaboração. 
+Durante o desenvolvimento do projeto serão realizadas diversas tarefas, cada uma com seu objetivo específico e possuindo diferentes formas de elaboração.
 
 A seguir, são apresentadas as aplicações utilizadas pela equipe e sua respectiva finalidade dentro do projeto.
 
