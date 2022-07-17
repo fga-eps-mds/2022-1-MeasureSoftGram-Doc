@@ -1,8 +1,7 @@
 ---
-Nome: Template de história de usuário
-Sobre: Este modelo fornece uma estrutura básica para problemas de história de usuário.
-Título: User-Story
-
+name: Template de história de usuário
+about: Este modelo fornece uma estrutura básica para problemas de história de usuário.
+title: User-Story
 ---
 
 ## História do usuário
