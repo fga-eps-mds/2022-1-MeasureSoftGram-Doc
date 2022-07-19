@@ -8,3 +8,4 @@ Este documento visa ser um índex da documentação de todos os documentos geren
 - [**Documento de gerência de configuração**](/documentos/gerencia_de_configuracao.md)
 - [**Documento de plano de comunicação**](/documentos/plano_de_comunicacao.md)
 - [**Documento de agenda de trabalho e ferramentas**](/documentos/agenda_de_trabalho_e_ferramentas.md)
+- [**Documento de Análise de Valor Adquirido**](/documentos/analise_de_valor_adquirido.md)
