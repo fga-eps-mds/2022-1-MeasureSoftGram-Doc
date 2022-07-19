@@ -1,5 +1,6 @@
 - [**Documentos**](/documentos/_index.md)
   - [**Análise de risco**](/documentos/analise_de_risco.md)
+  - [**Análise de valor adquirido**](/documentos/analise_de_valor_adquirido.md)
   - [**Custo de projeto**](/documentos/plano_de_custo.md)
   - [**Fluxo de processos**](/documentos/fluxo_de_processos.md)
   - [**Gerência de configuração**](/documentos/gerencia_de_configuracao.md)
