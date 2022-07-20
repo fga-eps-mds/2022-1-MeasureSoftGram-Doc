@@ -1,25 +1,18 @@
-# Planejamento da sprint 0
 
-## Histórico de versão 
+## Histórico de versão
 
 | Data | Autor | Descrição da revisão | Versão |
 | :--: | :---: | :------------------: | :----: |
 | 06 de julho de 2022 | **Hugo Sobral** | Criação do documento | 1.0.0 |
 
 
-## Período da sprint
+## Atividades da Semana 5
 
-O período compreende o dia **04/07/2022** até o dia  **09/07/2022**.
+* Período: **03/07/2022** até **09/07/2022**
 
+TODO: DOCUMENTAR AS OUTRAS ATIVIDADES FEITAS NESSA SEMANA! PRINCIPALMENTE AS DO LEAN INCEPTION
 
-## Objetivo da sprint
-
-Esta sprint surge como um pontapé inicial para o desenvolvimento de atividades mais complexas relacionadas ao projeto. Até o início da sprint, as atividades realizadas eram mais de ambientação e estudos relacionados ao projeto.
-
-Como o backlog do produto ainda não estava pronto no momento de início da sprint, foram alocadas tarefas relacionadas a documentação do projeto, gerencial e outros artefatos que independem da concepção da visão do produto.
-
-
-## Backlog da sprint
+Durante a quinta semana da disciplina foi definido um conjunto de documentos que devem ser realizados para o desenvolvimento de um projeto. Uma vez que o workshop do Lean Inception ainda não tinha sido concluído, e havia a necessidade eminente do grupo começar a produzir alguns dos entregáveis da `entrega R1`, foi definido que os membros da equipe desenvolvessem os seguintes documentos:
 
 - [[41]](https://github.com/fga-eps-mds/2022-1-MeasureSoftGram-Doc/issues/41) Definir a gerência de configuração.
 - [[45]](https://github.com/fga-eps-mds/2022-1-MeasureSoftGram-Doc/issues/45) Configurar o github io.
@@ -37,9 +30,3 @@ Como o backlog do produto ainda não estava pronto no momento de início da spri
 - [[28]](https://github.com/fga-eps-mds/2022-1-MeasureSoftGram-Doc/issues/28) Revisar e portar o ```Documento de agenda de trabalho e ferramentas```.
 - [[35]](https://github.com/fga-eps-mds/2022-1-MeasureSoftGram-Doc/issues/35) Revisar e portar o ```Realizar integração com SonarCube```.
 
-
-## Observações
-
-Como a equipe até a data do início da sprint ainda não tinha finalizado a concepção da visão do produto, e consequentemente não tinha estruturado o backlog do produto, não se possuía um importante artefato do scrum: **o backlog do produto**.
-
-Portanto, o **backlog da sprint** foi preenchido com atividades gerenciais e outros documentos que independem da priorização de um backlog do produto. Por conta deste impedimento, e para não bloquear o andamento do projeto, adotamos esta série de atividades e resolvemos nomear este período de atividades como **sprint 0**, já que estamos aproveitando boa parte do fluxo de processos da metodologia **Scrum**.
