@@ -1,13 +1,14 @@
 # Documento arquitetural
 
-|        Data         |       Autor       |       Descrição da revisão        | Versão |
-| :-----------------: | :---------------: | :-------------------------------: | :----: |
-| 12 de julho de 2022 | **Danillo Souza** |     Inclusão da documentação      | 0.1.0  |
-| 12 de julho de 2022 | **Danillo Souza** | Inclusão do diagrama arquitetural | 0.2.0  |
-| 13 de julho de 2022 | **Danillo Souza** | Inclusão do tópico de tecnologias | 0.3.0  |
+|        Data         |        Autor         |                            Descrição da revisão                            | Versão |
+| :-----------------: | :------------------: | :------------------------------------------------------------------------: | :----: |
+| 12 de julho de 2022 |  **Danillo Souza**   |                          Inclusão da documentação                          | 0.1.0  |
+| 12 de julho de 2022 |  **Danillo Souza**   |                     Inclusão do diagrama arquitetural                      | 0.2.0  |
+| 13 de julho de 2022 |  **Danillo Souza**   |                     Inclusão do tópico de tecnologias                      | 0.3.0  |
 | 14 de julho de 2022 | **Lucas Boaventura** | Revisão do tópico de tecnologias atualizadas do projeto e suas referências | 0.4.0  |
-| 14 de julho de 2022 | **Lucas Boaventura** | Criação do tópico de Escopo e o de Restrições e Metas Arquiteturais | 0.5.0  |
-| 14 de julho de 2022 | **Lucas Boaventura** | Alteração da imagem do diagrama arquitetural | 1.0  |
+| 14 de julho de 2022 | **Lucas Boaventura** |    Criação do tópico de Escopo e o de Restrições e Metas Arquiteturais     | 0.5.0  |
+| 14 de julho de 2022 | **Lucas Boaventura** |                Alteração da imagem do diagrama arquitetural                |  1.0   |
+| 25 de julho de 2022 |  **Danillo Souza**   |               Inclusão do diagrama de pacotes do projeto web               |  1.0   |
 
 ## Introdução
 
@@ -38,9 +39,9 @@ Este documento se aplica ao processo de desenvolvimento e manuntenção do **Mea
 
 ### CLI
 
-**CLI** significa do inglês 'Interface de Linha de Comando'. É um programa que permite que os usuários escrevam os comandos para determinada funcionalidade passando instruções para o computador. 
+**CLI** significa do inglês 'Interface de Linha de Comando'. É um programa que permite que os usuários escrevam os comandos para determinada funcionalidade passando instruções para o computador.
 
-- **PyPI**: O Python Package Index é um repositório para armazenar pacotes de código escritos na linguagem de programação **Python**.  
+- **PyPI**: O Python Package Index é um repositório para armazenar pacotes de código escritos na linguagem de programação **Python**.
 
 ### Banco de dados
 
@@ -50,6 +51,11 @@ Este documento se aplica ao processo de desenvolvimento e manuntenção do **Mea
 
 ![Diagrama arquitetural](../assets/images/documento_de_arquitetura/arquitetura.png)
 
+## Diagrama de pacotes
+
+### [Web](https://github.com/fga-eps-mds/2022-1-MeasureSoftGram-Front)
+
+![pacotesWeb](../assets/images/documento_de_arquitetura/pacotesWeb.png)
 ## Restrições e Metas Arquiteturais
 
 ### Metas
@@ -62,14 +68,14 @@ Este documento se aplica ao processo de desenvolvimento e manuntenção do **Mea
 
 ### Restrições
 
-|  Restrições   |                                                             |
-| :-----------: | :---------------------------------------------------------: |
-| Conectividade | É necessária a conexão com internet para utilização da CLI e do Frontend  |
-|  Plataforma   |        A aplicação terá suporte para linha de comando (CLI) e WEB        |
-|    Público    | A aplicação será desenvolvida voltada ao público de desenvolvedores e empresas de tecnologia |
-|   Linguagem   |    A aplicação será desenvolvida em inglê por conta das integrações com plataformas que já utilizam essa linguagem     |
-|    Equipe     |            A equipe possui 10 integrantes            |
-|     Prazo     | O escopo proposto pode ser alterado ao longo da disciplina, mas o prazo é até o final do semestre 2022-1 da Universidade de Brasília  |
+|  Restrições   |                                                                                                                                      |
+| :-----------: | :----------------------------------------------------------------------------------------------------------------------------------: |
+| Conectividade |                               É necessária a conexão com internet para utilização da CLI e do Frontend                               |
+|  Plataforma   |                                      A aplicação terá suporte para linha de comando (CLI) e WEB                                      |
+|    Público    |                     A aplicação será desenvolvida voltada ao público de desenvolvedores e empresas de tecnologia                     |
+|   Linguagem   |           A aplicação será desenvolvida em inglê por conta das integrações com plataformas que já utilizam essa linguagem            |
+|    Equipe     |                                                    A equipe possui 10 integrantes                                                    |
+|     Prazo     | O escopo proposto pode ser alterado ao longo da disciplina, mas o prazo é até o final do semestre 2022-1 da Universidade de Brasília |
 
 ## Referência
 
