@@ -7,8 +7,8 @@
 | 13 de julho de 2022 |  **Danillo Souza**   |                     Inclusão do tópico de tecnologias                      | 0.3.0  |
 | 14 de julho de 2022 | **Lucas Boaventura** | Revisão do tópico de tecnologias atualizadas do projeto e suas referências | 0.4.0  |
 | 14 de julho de 2022 | **Lucas Boaventura** |    Criação do tópico de Escopo e o de Restrições e Metas Arquiteturais     | 0.5.0  |
-| 14 de julho de 2022 | **Lucas Boaventura** |                Alteração da imagem do diagrama arquitetural                |  1.0   |
-| 25 de julho de 2022 |  **Danillo Souza**   |               Inclusão do diagrama de pacotes do projeto web               |  1.0   |
+| 14 de julho de 2022 | **Lucas Boaventura** |                Alteração da imagem do diagrama arquitetural                | 1.0.0  |
+| 25 de julho de 2022 |  **Danillo Souza**   |               Inclusão do diagrama de pacotes do projeto web               | 1.1.0  |
 
 ## Introdução
 
