@@ -8,6 +8,7 @@
   - [**Agenda de trabalho e ferramentas**](/documentos/agenda_de_trabalho_e_ferramentas.md)
   - [**Guia de Contribuição**](/documentos/guia_de_contribuicao.md)
   - [**Informações gerais da equipe**](/documentos/informacoes_gerais_da_equipe.md)
+  - [**Visão do Produto**](/documentos/visao_do_produto.md)
 
 - [**Gestão do Projeto**](/semanas/_index.md)
   - [Semana 1](/semanas/semana_01.md)
