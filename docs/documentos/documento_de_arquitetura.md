@@ -9,6 +9,7 @@
 | 14 de julho de 2022 | **Lucas Boaventura** |    Criação do tópico de Escopo e o de Restrições e Metas Arquiteturais     | 0.5.0  |
 | 14 de julho de 2022 | **Lucas Boaventura** |                Alteração da imagem do diagrama arquitetural                | 1.0.0  |
 | 25 de julho de 2022 |  **Danillo Souza**   |               Inclusão do diagrama de pacotes do projeto web               | 1.1.0  |
+| 26 de julho de 2022 |  **Lucas Boaventura**   |               Inclusão do diagrama de pacotes do service e da cli       | 1.2.0  |
 
 ## Introdução
 
@@ -56,6 +57,15 @@ Este documento se aplica ao processo de desenvolvimento e manuntenção do **Mea
 ### [Web](https://github.com/fga-eps-mds/2022-1-MeasureSoftGram-Front)
 
 ![pacotesWeb](../assets/images/documento_de_arquitetura/pacotesWeb.png)
+
+### [Service](https://github.com/fga-eps-mds/2022-1-MeasureSoftGram-Service)
+
+![pacotesService](../assets/images/documento_de_arquitetura/service.png)
+
+### [Core](https://github.com/fga-eps-mds/2022-1-MeasureSoftGram-Core)
+
+![pacotesCore](../assets/images/documento_de_arquitetura/core.png)
+
 ## Restrições e Metas Arquiteturais
 
 ### Metas
