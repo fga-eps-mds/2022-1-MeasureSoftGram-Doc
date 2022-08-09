@@ -562,17 +562,139 @@ print(json.dumps(data, indent=4))
 </p>
 
 
+### Coleta métricas do GitHub
+
+```python
+import http.client
+import json
+
+conn = http.client.HTTPSConnection("measuresoftgram-service.herokuapp.com")
+
+print("Digite um Token de acesso a API do Github:")
+print("Caso você não tenha um, crie um novo usando o seguinte link. Lembre-se o token criado não precisa de nenhuma permissão. Link: https://github.com/settings/tokens")
+
+github_token = input()
+
+payload = json.dumps({
+  "github_token": github_token,
+  "issues_repository_url": "https://github.com/fga-eps-mds/2022-1-MeasureSoftGram-Doc",
+  "pipelines_repository_url": "https://github.com/fga-eps-mds/2022-1-MeasureSoftGram-Service",
+  "issues_metrics_x_days": 7,
+  "pipeline_metrics_x_days": 90,
+  "issue_labels": [
+    "bug",
+    "problema"
+  ],
+  "build_pipeline_names": [
+    "Run Tests",
+    "build"
+  ]
+})
+headers = {
+  'Content-Type': 'application/json'
+}
+conn.request("POST", "/api/v1/organizations/1/repository/1/import/github-metrics/", payload, headers)
+res = conn.getresponse()
+
+data = res.read().decode()
+data = json.loads(data)
+
+print(json.dumps(data, indent=4))
+```
+
+
+
+### Coleta o valor de uma determinada métrica para um determinado repositório
+
+```python
+import http.client
+import json
+
+conn = http.client.HTTPSConnection("measuresoftgram-service.herokuapp.com")
+payload = json.dumps({
+  "metric_id": 78,
+  "value": 14
+})
+headers = {
+  'Content-Type': 'application/json'
+}
+conn.request("POST", "/api/v1/organizations/1/repository/1/create/metrics/", payload, headers)
+res = conn.getresponse()
+
+data = res.read().decode()
+data = json.loads(data)
+
+print(json.dumps(data, indent=4))
+
+```
+
+
+### Solicita o cálculo de uma determinada medida para um determinado repositório
+
+```python
+import http.client
+import json
+
+conn = http.client.HTTPSConnection("measuresoftgram-service.herokuapp.com")
+payload = json.dumps({
+  "measures": [ { "key": "passed_tests" },
+                { "key": "test_builds" },
+                { "key": "test_coverage" },
+                { "key": "commented_file_density" },
+                { "key": "duplication_absense" },
+                { "key": "non_complex_file_density" },
+                { "key": "team_throughput" },
+                { "key": "ci_feedback_time" } ]
+})
+headers = {
+  'Content-Type': 'application/json'
+}
+conn.request("POST", "/api/v1/organizations/1/repository/1/calculate/measures/", payload, headers)
+res = conn.getresponse()
+
+data = res.read().decode()
+data = json.loads(data)
+
+print(json.dumps(data, indent=4))
+
+```
+
+<p align='center'>
+    <img src='https://user-images.githubusercontent.com/31013187/183739262-5963ce90-b82a-4bf2-aa7e-0f34df31232f.png'>
+    <figcaption align='center'>
+        <b align='center'>Figura 12: Resultado esperado 12</b>
+    </figcaption>
+</p>
 
 
 
 
+### Solicita o cálculo de uma determinada subcaracterísticas para um determinado repositório
 
+```python
+import http.client
+import json
 
+conn = http.client.HTTPSConnection("measuresoftgram-service.herokuapp.com")
+payload = json.dumps({
+  "measures": [ { "key": "testing_status" },
+                { "key": "modifiability" } ]
+})
+headers = {
+  'Content-Type': 'application/json'
+}
+conn.request("POST", "/api/v1/organizations/1/repository/1/calculate/subcharacteristics/", payload, headers)
+res = conn.getresponse()
 
+data = res.read().decode()
+data = json.loads(data)
 
+print(json.dumps(data, indent=4))
+```
 
-
-
-
-
-
+<p align='center'>
+    <img src='https://user-images.githubusercontent.com/31013187/183739602-499d3004-8f97-49b6-908f-edee08dccc1b.png'>
+    <figcaption align='center'>
+        <b align='center'>Figura 13: Resultado esperado 13</b>
+    </figcaption>
+</p>
