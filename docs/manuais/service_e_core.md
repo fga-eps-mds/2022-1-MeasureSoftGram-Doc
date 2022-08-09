@@ -223,3 +223,70 @@ print(json.dumps(data, indent=4))
         <b align='center'>Figura 5: Resultado esperado 5</b>
     </figcaption>
 </p>
+
+
+### Lista o último valor das métricas coletadas para um determinado repositório
+
+```python
+import http.client
+import json
+import os
+
+URL = os.getenv('MSG_SERVICE')
+
+if not URL:
+    URL = "measuresoftgram-service.herokuapp.com"
+
+URL = URL.replace('https://', '').replace('http://', '')
+
+conn = http.client.HTTPSConnection(URL)
+payload = ''
+headers = {}
+conn.request("GET", "/api/v1/organizations/1/repository/1/metrics/", payload, headers)
+res = conn.getresponse()
+data = res.read().decode()
+data = json.loads(data)
+
+print(json.dumps(data, indent=4))
+```
+
+
+<p align='center'>
+    <img src='https://user-images.githubusercontent.com/31013187/183732318-ad698622-383a-47cb-badd-afd944f91302.png'>
+    <figcaption align='center'>
+        <b align='center'>Figura 6: Resultado esperado 6</b>
+    </figcaption>
+</p>
+
+
+### Lista o último valor das medidas calculadas para um determinado repositório
+
+```python
+import http.client
+import json
+import os
+
+URL = os.getenv('MSG_SERVICE')
+
+if not URL:
+    URL = "measuresoftgram-service.herokuapp.com"
+
+URL = URL.replace('https://', '').replace('http://', '')
+
+conn = http.client.HTTPSConnection(URL)
+payload = ''
+headers = {}
+conn.request("GET", "/api/v1/organizations/1/repository/1/measures/", payload, headers)
+res = conn.getresponse()
+data = res.read().decode()
+data = json.loads(data)
+
+print(json.dumps(data, indent=4))
+```
+
+<p align='center'>
+    <img src='https://user-images.githubusercontent.com/31013187/183733250-e523ce3a-0536-48f3-99e4-0830f8c0050d.png'>
+    <figcaption align='center'>
+        <b align='center'>Figura 7: Resultado esperado 7</b>
+    </figcaption>
+</p>
