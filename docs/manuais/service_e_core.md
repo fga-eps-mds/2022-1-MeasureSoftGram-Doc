@@ -69,6 +69,8 @@ $ export MSG_CORE=http://localhost:7000
 
 ### Detalha um repositório criado na MeasureSoftGram
 
+Atualmente o `service' possui fixado somente um repositório e uma organização. Mas futuramente o endpoint irá funcionar da mesma maneira porém com vários repositórios e organizações.
+
 ```python
 import http.client
 import json
@@ -105,6 +107,8 @@ print(json.dumps(data, indent=4))
 
 
 ### Lista as métricas atualmente suportadas pelo MeasureSoftGram
+
+Esse endpoint lista todas as métricas que o MeasureSoftGram suporta. E quando falamos suportar estamos falando de armazenar valores coletados de diversas fontes, sendo as fontes atuais os JSONs do SonarQube e a API do GitHub.
 
 ```python
 import http.client
@@ -144,6 +148,8 @@ print(json.dumps(data, indent=4))
 
 ### Lista as medidas atualmente suportadas pelo MeasureSoftGram
 
+Endpoint que lista as medidas que o MeasureSoftGram suporta. E quando falamos suportar queremos dizer as medidas que o software é capaz de calcular.
+
 ```python
 import http.client
 import json
@@ -179,6 +185,8 @@ print(json.dumps(data, indent=4))
 
 
 ### Lista as subcaracterísticas atualmente suportadas pelo MeasureSoftGram
+
+Endpoint que lista as subcaracterísticas que o MeasureSoftGram suporta. E quando falamos suportar queremos dizer as subcaracterísticas que o software é capaz de calcular.
 
 ```python
 import http.client
@@ -217,6 +225,8 @@ print(json.dumps(data, indent=4))
 
 ### Lista as características atualmente suportadas pelo MeasureSoftGram
 
+Endpoint que lista as características que o MeasureSoftGram suporta. E quando falamos suportar queremos dizer as características que o software é capaz de calcular.
+
 ```python
 import http.client
 import json
@@ -252,6 +262,8 @@ print(json.dumps(data, indent=4))
 
 
 ### Lista o último valor das métricas coletadas para um determinado repositório
+
+Endpoint que lista todas as métricas coletadas de um determinado repositório. Neste endpoint é possível obter o último valor de cada métrica.
 
 ```python
 import http.client
@@ -291,6 +303,8 @@ print(json.dumps(data, indent=4))
 
 ### Lista o último valor das medidas calculadas para um determinado repositório
 
+Endpoint que lista todas as medidas coletadas de um determinado repositório. Neste endpoint é possível obter o último valor de uma determinada medida.
+
 ```python
 import http.client
 import json
@@ -326,8 +340,9 @@ print(json.dumps(data, indent=4))
     </figcaption>
 </p>
 
-
 ### Lista o último valor das subcaracterísticas calculadas para um determinado repositório
+
+Endpoint que lista todas as subcaracterísticas coletadas de um determinado repositório. Neste endpoint é possível obter o último valor de uma determinada subcaracterística.
 
 ```python
 import http.client
@@ -368,6 +383,8 @@ print(json.dumps(data, indent=4))
 
 ### Lista o último valor das características calculadas para um determinado repositório
 
+Endpoint que lista todas as características coletadas de um determinado repositório. Neste endpoint é possível obter o último valor de uma determinada característica.
+
 ```python
 import http.client
 import json
@@ -406,6 +423,8 @@ print(json.dumps(data, indent=4))
 
 
 ### Lista os valores calculados do SQC em ordem decrescente (do mais recente para o mais antigo)
+
+Endpoint que lista o histórico de valores que o SQC de um repositório em ordem decrescente, ou seja, do SQC mais recente para o mais antigo.
 
 ```python
 import http.client
@@ -448,6 +467,8 @@ print(json.dumps(data, indent=4))
 
 ### Apresenta a pré-configuração vigente de um repositório
 
+Endpoint que apresenta a pré-configuração vigente de um repositório.
+
 ```python
 import http.client
 import json
@@ -486,6 +507,8 @@ print(json.dumps(data, indent=4))
 
 ### Lista o histórico de valores coletados das métricas de um repositório
 
+Endpoint que lista os últimos 50 registros de valores coletados das métricas de um repositório.
+
 ```python
 import http.client
 import json
@@ -516,6 +539,8 @@ print(json.dumps(data, indent=4))
 
 ### Lista o histórico de valores calculados das medidas de um repositório
 
+Endpoint que lista os últimos 50 registros de valores calculados das medidas de um repositório.
+
 ```python
 import http.client
 import json
@@ -543,8 +568,9 @@ data = json.loads(data)
 
 print(json.dumps(data, indent=4))
 ```
-
 ### Lista o histórico de valores calculados das subcaracterísticas de um repositório
+
+Endpoint que lista os últimos 50 registros de valores calculados das subcaracterísticas de um repositório.
 
 ```python
 import http.client
@@ -576,6 +602,8 @@ print(json.dumps(data, indent=4))
 
 ### Lista o histórico de valores calculados das características de um repositório
 
+Endpoint que lista os últimos 50 registros de valores calculados das características de um repositório.
+
 ```python
 import http.client
 import json
@@ -605,6 +633,8 @@ print(json.dumps(data, indent=4))
 ```
 
 ### Recebe um arquivo do SonarQube para salvar como métricas de um repositório
+
+Endpoint que recebe um JSON do SonarQube e importa as métricas contidas e associa ao repositório.
 
 ```python
 import http.client
@@ -643,6 +673,16 @@ print(json.dumps(data, indent=4))
 
 
 ### Coleta métricas do GitHub
+
+Endpoint que recebe recebe os parâmetros necessários para coletar as seguintes métricas na API do GitHub:
+
+* `total_number_of_issues_in_the_last_x_days`: Essa métrica depende dos parâmetros `github_token`, `issues_repository_url`, `issues_metrics_x_days`, `issue_labels`.
+
+* `number_of_resolved_issues_in_the_last_x_days`: Essa métrica depende dos parâmetros `github_token`, `issues_repository_url`, `issues_metrics_x_days`, `issue_labels`.
+
+* `runtime_sum_of_build_pipelines_in_the_last_x_days`: Essa métrica depende dos parâmetros `github_token`, `pipelines_repository_url`, `pipeline_metrics_x_days`, `build_pipeline_names`.
+
+* `number_of_build_pipelines_in_the_last_x_days`: Essa métrica depende dos parâmetros `github_token`, `pipelines_repository_url`, `pipeline_metrics_x_days`, `build_pipeline_names`.
 
 ```python
 import http.client
@@ -699,6 +739,8 @@ print(json.dumps(data, indent=4))
 
 ### Coleta o valor de uma determinada métrica para um determinado repositório
 
+Caso o usuário do sistema deseje coletar determinada métrica "manualmente", e quando falamos manualmente estamos se referindo ao fato do sistema não ter suporte a fonte de dados que o usuário deseja coletar (atualmente temos suporte ao SonarQube e ao GitHub), ele poderá utilizar esse endpoint especificando o id da métrica e seu respectivo valor.
+
 ```python
 import http.client
 import json
@@ -737,6 +779,8 @@ print(json.dumps(data, indent=4))
 
 
 ### Solicita o cálculo de uma determinada medida para um determinado repositório
+
+Por meio desse endpoint o usuário poderá solicitar o cálculo de uma ou mais medida.
 
 ```python
 import http.client
@@ -791,6 +835,8 @@ print(json.dumps(data, indent=4))
 
 ### Solicita o cálculo de uma determinada subcaracterísticas para um determinado repositório
 
+Por meio desse endpoint o usuário poderá solicitar o cálculo de uma ou mais subcaracterísticas.
+
 ```python
 import http.client
 import json
@@ -835,6 +881,8 @@ print(json.dumps(data, indent=4))
 
 
 ### Solicita o cálculo de uma determinada características para um determinado repositório
+
+Por meio desse endpoint o usuário poderá solicitar o cálculo de uma ou mais características.
 
 ```python
 import http.client
