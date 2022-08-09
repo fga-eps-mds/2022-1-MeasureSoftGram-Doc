@@ -872,8 +872,46 @@ print(json.dumps(data, indent=4))
 ```
 
 <p align='center'>
-    <img src='https://user-images.githubusercontent.com/31013187/183739602-499d3004-8f97-49b6-908f-edee08dccc1b.png'>
+    <img src='https://user-images.githubusercontent.com/31013187/183753387-bf4ffeaa-902f-47aa-a70e-94f798bdc79e.png'>
     <figcaption align='center'>
-        <b align='center'>Figura 13: Resultado esperado 13</b>
+        <b align='center'>Figura 14: Resultado esperado 14</b>
     </figcaption>
 </p>
+
+<!--
+### Solicita o cálculo do SQC de um determinado repositório
+
+```python
+import http.client
+import json
+import os
+
+URL = os.getenv('MSG_SERVICE')
+
+if not URL:
+    URL = "measuresoftgram-service.herokuapp.com"
+
+if 'https://' in URL:
+    URL = URL.replace('https://', '')
+    conn = http.client.HTTPSConnection(URL)
+
+elif 'http://' in URL:
+    URL = URL.replace('http://', '')
+    conn = http.client.HTTPConnection(URL)
+
+conn.request("POST", "/api/v1/organizations/1/repository/1/calculate/sqc/")
+res = conn.getresponse()
+
+data = res.read().decode()
+data = json.loads(data)
+
+print(json.dumps(data, indent=4))
+```
+
+<p align='center'>
+    <img src='https://user-images.githubusercontent.com/31013187/183753387-bf4ffeaa-902f-47aa-a70e-94f798bdc79e.png'>
+    <figcaption align='center'>
+        <b align='center'>Figura 14: Resultado esperado 14</b>
+    </figcaption>
+</p>
+-->
