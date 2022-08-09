@@ -87,6 +87,13 @@ data = json.loads(data)
 print(json.dumps(data, indent=4))
 ```
 
+<p align='center'>
+    <img src='https://user-images.githubusercontent.com/31013187/183729046-3fb0923b-1342-42e9-9889-51e704ec4735.png'>
+    <figcaption align='center'>
+        <b>Figura 1: Resultado esperado 1</b>
+    </figcaption>
+</p>
+
 
 ### Lista as métricas atualmente suportadas pelo MeasureSoftGram
 
@@ -112,4 +119,12 @@ data = json.loads(data)
 
 print(json.dumps(data, indent=4))
 ```
+
+<p align='center'>
+    <img src='https://user-images.githubusercontent.com/31013187/183729564-ff2d6efa-3ed9-4bef-a767-b8f7e76fb6fb.png'>
+    <figcaption align='center'>
+        <b>Figura 1: Resultado esperado 1</b>
+    </figcaption>
+</p>
+
 
