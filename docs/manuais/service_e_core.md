@@ -123,8 +123,103 @@ print(json.dumps(data, indent=4))
 <p align='center'>
     <img src='https://user-images.githubusercontent.com/31013187/183729564-ff2d6efa-3ed9-4bef-a767-b8f7e76fb6fb.png'>
     <figcaption align='center'>
-        <b>Figura 1: Resultado esperado 1</b>
+        <b>Figura 2: Resultado esperado 2</b>
     </figcaption>
 </p>
 
 
+### Lista as medidas atualmente suportadas pelo MeasureSoftGram
+
+```python
+import http.client
+import json
+import os
+
+URL = os.getenv('MSG_SERVICE')
+
+if not URL:
+    URL = "measuresoftgram-service.herokuapp.com"
+
+URL = URL.replace('https://', '').replace('http://', '')
+
+conn = http.client.HTTPSConnection(URL)
+payload = ''
+headers = {}
+conn.request("GET", "/api/v1/supported-measures/", payload, headers)
+res = conn.getresponse()
+data = res.read().decode()
+data = json.loads(data)
+
+print(json.dumps(data, indent=4))
+```
+<p align='center'>
+    <img src='https://user-images.githubusercontent.com/31013187/183730483-3731e34c-5a67-4793-9954-cfd2bcc6b02b.png'>
+    <figcaption align='center'>
+        <b align='center'>Figura 3: Resultado esperado 3</b>
+    </figcaption>
+</p>
+
+
+### Lista as subcaracterísticas atualmente suportadas pelo MeasureSoftGram
+
+```python
+import http.client
+import json
+import os
+
+URL = os.getenv('MSG_SERVICE')
+
+if not URL:
+    URL = "measuresoftgram-service.herokuapp.com"
+
+URL = URL.replace('https://', '').replace('http://', '')
+
+conn = http.client.HTTPSConnection(URL)
+payload = ''
+headers = {}
+conn.request("GET", "/api/v1/supported-subcharacteristics/", payload, headers)
+res = conn.getresponse()
+data = res.read().decode()
+data = json.loads(data)
+
+print(json.dumps(data, indent=4))
+```
+
+<p align='center'>
+    <img src='https://user-images.githubusercontent.com/31013187/183731222-c1a79f4d-ff9e-4cd3-9049-9731d1e7de77.png'>
+    <figcaption align='center'>
+        <b align='center'>Figura 4: Resultado esperado 4</b>
+    </figcaption>
+</p>
+
+
+### Lista as características atualmente suportadas pelo MeasureSoftGram
+
+```python
+import http.client
+import json
+import os
+
+URL = os.getenv('MSG_SERVICE')
+
+if not URL:
+    URL = "measuresoftgram-service.herokuapp.com"
+
+URL = URL.replace('https://', '').replace('http://', '')
+
+conn = http.client.HTTPSConnection(URL)
+payload = ''
+headers = {}
+conn.request("GET", "/api/v1/supported-characteristics/", payload, headers)
+res = conn.getresponse()
+data = res.read().decode()
+data = json.loads(data)
+
+print(json.dumps(data, indent=4))
+```
+<p align='center'>
+    <img src='https://user-images.githubusercontent.com/31013187/183731642-0fda45c8-6406-4247-9bf3-51496a6def36.png'>
+    <figcaption align='center'>
+        <b align='center'>Figura 5: Resultado esperado 5</b>
+    </figcaption>
+</p>
