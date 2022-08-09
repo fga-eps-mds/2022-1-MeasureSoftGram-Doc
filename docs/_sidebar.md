@@ -30,3 +30,4 @@
 
 - [**Manuais de uso**](/manuais/service_e_core.md)
   - [**Service e Core**](/manuais/service_e_core.md)
+  - [**CLI**](/manuais/cli.md)
