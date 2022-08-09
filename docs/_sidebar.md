@@ -27,3 +27,6 @@
   - [Sprint 3](/sprints/sprint_03.md)
   - [Sprint 4](/sprints/sprint_04.md)
   - [Sprint 5](/sprints/sprint_05.md)
+
+- [**Manuais de uso**](/manuais/service_e_core.md)
+  - [**Service e Core**](/manuais/service_e_core.md)
