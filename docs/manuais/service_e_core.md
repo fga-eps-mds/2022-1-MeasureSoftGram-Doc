@@ -60,6 +60,11 @@ $ export MSG_CORE=http://localhost:7000
 
 * `Convite para a Collection do Postman`: https://www.postman.com/bold-space-281583/workspace/measuresoftgram/collection/10503200-b9b9a474-ed9c-43e0-a3d3-9aa6289bb53f?action=share&creator=10503200
 
+* Caso prefira importar a Collection para uma instância do Postman rodando localmente, basta seguir o vídeo a seguir:
+
+* Tutorial de como importar uma collection: https://youtu.be/LdhKXkbrBt8
+* Link da collection:
+
 ## Funcionalidades
 
 ### Detalha um repositório criado na MeasureSoftGram
@@ -73,10 +78,14 @@ URL = os.getenv('MSG_SERVICE')
 
 if not URL:
     URL = "measuresoftgram-service.herokuapp.com"
+if 'https://' in URL:
+    URL = URL.replace('https://', '')
+    conn = http.client.HTTPSConnection(URL)
 
-URL = URL.replace('https://', '').replace('http://', '')
+elif 'http://' in URL:
+    URL = URL.replace('http://', '')
+    conn = http.client.HTTPConnection(URL)
 
-conn = http.client.HTTPSConnection(URL)
 payload = ''
 headers = {}
 conn.request("GET", "/api/v1/organizations/1/repository/1/", payload, headers)
@@ -107,9 +116,14 @@ URL = os.getenv('MSG_SERVICE')
 if not URL:
     URL = "measuresoftgram-service.herokuapp.com"
 
-URL = URL.replace('https://', '').replace('http://', '')
+if 'https://' in URL:
+    URL = URL.replace('https://', '')
+    conn = http.client.HTTPSConnection(URL)
 
-conn = http.client.HTTPSConnection(URL)
+elif 'http://' in URL:
+    URL = URL.replace('http://', '')
+    conn = http.client.HTTPConnection(URL)
+
 payload = ''
 headers = {}
 conn.request("GET", "/api/v1/supported-metrics/", payload, headers)
@@ -139,10 +153,14 @@ URL = os.getenv('MSG_SERVICE')
 
 if not URL:
     URL = "measuresoftgram-service.herokuapp.com"
+if 'https://' in URL:
+    URL = URL.replace('https://', '')
+    conn = http.client.HTTPSConnection(URL)
 
-URL = URL.replace('https://', '').replace('http://', '')
+elif 'http://' in URL:
+    URL = URL.replace('http://', '')
+    conn = http.client.HTTPConnection(URL)
 
-conn = http.client.HTTPSConnection(URL)
 payload = ''
 headers = {}
 conn.request("GET", "/api/v1/supported-measures/", payload, headers)
@@ -171,10 +189,14 @@ URL = os.getenv('MSG_SERVICE')
 
 if not URL:
     URL = "measuresoftgram-service.herokuapp.com"
+if 'https://' in URL:
+    URL = URL.replace('https://', '')
+    conn = http.client.HTTPSConnection(URL)
 
-URL = URL.replace('https://', '').replace('http://', '')
+elif 'http://' in URL:
+    URL = URL.replace('http://', '')
+    conn = http.client.HTTPConnection(URL)
 
-conn = http.client.HTTPSConnection(URL)
 payload = ''
 headers = {}
 conn.request("GET", "/api/v1/supported-subcharacteristics/", payload, headers)
@@ -204,10 +226,14 @@ URL = os.getenv('MSG_SERVICE')
 
 if not URL:
     URL = "measuresoftgram-service.herokuapp.com"
+if 'https://' in URL:
+    URL = URL.replace('https://', '')
+    conn = http.client.HTTPSConnection(URL)
 
-URL = URL.replace('https://', '').replace('http://', '')
+elif 'http://' in URL:
+    URL = URL.replace('http://', '')
+    conn = http.client.HTTPConnection(URL)
 
-conn = http.client.HTTPSConnection(URL)
 payload = ''
 headers = {}
 conn.request("GET", "/api/v1/supported-characteristics/", payload, headers)
@@ -236,10 +262,14 @@ URL = os.getenv('MSG_SERVICE')
 
 if not URL:
     URL = "measuresoftgram-service.herokuapp.com"
+if 'https://' in URL:
+    URL = URL.replace('https://', '')
+    conn = http.client.HTTPSConnection(URL)
 
-URL = URL.replace('https://', '').replace('http://', '')
+elif 'http://' in URL:
+    URL = URL.replace('http://', '')
+    conn = http.client.HTTPConnection(URL)
 
-conn = http.client.HTTPSConnection(URL)
 payload = ''
 headers = {}
 conn.request("GET", "/api/v1/organizations/1/repository/1/metrics/", payload, headers)
@@ -271,9 +301,14 @@ URL = os.getenv('MSG_SERVICE')
 if not URL:
     URL = "measuresoftgram-service.herokuapp.com"
 
-URL = URL.replace('https://', '').replace('http://', '')
+if 'https://' in URL:
+    URL = URL.replace('https://', '')
+    conn = http.client.HTTPSConnection(URL)
 
-conn = http.client.HTTPSConnection(URL)
+elif 'http://' in URL:
+    URL = URL.replace('http://', '')
+    conn = http.client.HTTPConnection(URL)
+
 payload = ''
 headers = {}
 conn.request("GET", "/api/v1/organizations/1/repository/1/measures/", payload, headers)
@@ -304,9 +339,14 @@ URL = os.getenv('MSG_SERVICE')
 if not URL:
     URL = "measuresoftgram-service.herokuapp.com"
 
-URL = URL.replace('https://', '').replace('http://', '')
+if 'https://' in URL:
+    URL = URL.replace('https://', '')
+    conn = http.client.HTTPSConnection(URL)
 
-conn = http.client.HTTPSConnection(URL)
+elif 'http://' in URL:
+    URL = URL.replace('http://', '')
+    conn = http.client.HTTPConnection(URL)
+
 payload = ''
 headers = {}
 conn.request("GET", "/api/v1/organizations/1/repository/1/subcharacteristics/", payload, headers)
@@ -338,9 +378,14 @@ URL = os.getenv('MSG_SERVICE')
 if not URL:
     URL = "measuresoftgram-service.herokuapp.com"
 
-URL = URL.replace('https://', '').replace('http://', '')
+if 'https://' in URL:
+    URL = URL.replace('https://', '')
+    conn = http.client.HTTPSConnection(URL)
 
-conn = http.client.HTTPSConnection(URL)
+elif 'http://' in URL:
+    URL = URL.replace('http://', '')
+    conn = http.client.HTTPConnection(URL)
+
 payload = ''
 headers = {}
 conn.request("GET", "/api/v1/organizations/1/repository/1/characteristics/", payload, headers)
@@ -372,9 +417,14 @@ URL = os.getenv('MSG_SERVICE')
 if not URL:
     URL = "measuresoftgram-service.herokuapp.com"
 
-URL = URL.replace('https://', '').replace('http://', '')
+if 'https://' in URL:
+    URL = URL.replace('https://', '')
+    conn = http.client.HTTPSConnection(URL)
 
-conn = http.client.HTTPSConnection(URL)
+elif 'http://' in URL:
+    URL = URL.replace('http://', '')
+    conn = http.client.HTTPConnection(URL)
+
 payload = ''
 headers = {}
 conn.request("GET", "/api/v1/organizations/1/repository/1/sqc/", payload, headers)
@@ -408,9 +458,14 @@ URL = os.getenv('MSG_SERVICE')
 if not URL:
     URL = "measuresoftgram-service.herokuapp.com"
 
-URL = URL.replace('https://', '').replace('http://', '')
+if 'https://' in URL:
+    URL = URL.replace('https://', '')
+    conn = http.client.HTTPSConnection(URL)
 
-conn = http.client.HTTPSConnection(URL)
+elif 'http://' in URL:
+    URL = URL.replace('http://', '')
+    conn = http.client.HTTPConnection(URL)
+
 payload = ''
 headers = {}
 conn.request("GET", "/api/v1/organizations/1/repository/1/current-pre-config/", payload, headers)
@@ -441,9 +496,14 @@ URL = os.getenv('MSG_SERVICE')
 if not URL:
     URL = "measuresoftgram-service.herokuapp.com"
 
-URL = URL.replace('https://', '').replace('http://', '')
+if 'https://' in URL:
+    URL = URL.replace('https://', '')
+    conn = http.client.HTTPSConnection(URL)
 
-conn = http.client.HTTPSConnection(URL)
+elif 'http://' in URL:
+    URL = URL.replace('http://', '')
+    conn = http.client.HTTPConnection(URL)
+
 payload = ''
 headers = {}
 conn.request("GET", "/api/v1/organizations/1/repository/1/history/metrics/", payload, headers)
@@ -466,9 +526,14 @@ URL = os.getenv('MSG_SERVICE')
 if not URL:
     URL = "measuresoftgram-service.herokuapp.com"
 
-URL = URL.replace('https://', '').replace('http://', '')
+if 'https://' in URL:
+    URL = URL.replace('https://', '')
+    conn = http.client.HTTPSConnection(URL)
 
-conn = http.client.HTTPSConnection(URL)
+elif 'http://' in URL:
+    URL = URL.replace('http://', '')
+    conn = http.client.HTTPConnection(URL)
+
 payload = ''
 headers = {}
 conn.request("GET", "/api/v1/organizations/1/repository/1/history/measures/", payload, headers)
@@ -491,9 +556,14 @@ URL = os.getenv('MSG_SERVICE')
 if not URL:
     URL = "measuresoftgram-service.herokuapp.com"
 
-URL = URL.replace('https://', '').replace('http://', '')
+if 'https://' in URL:
+    URL = URL.replace('https://', '')
+    conn = http.client.HTTPSConnection(URL)
 
-conn = http.client.HTTPSConnection(URL)
+elif 'http://' in URL:
+    URL = URL.replace('http://', '')
+    conn = http.client.HTTPConnection(URL)
+
 payload = ''
 headers = {}
 conn.request("GET", "/api/v1/organizations/1/repository/1/history/subcharacteristics/", payload, headers)
@@ -516,9 +586,14 @@ URL = os.getenv('MSG_SERVICE')
 if not URL:
     URL = "measuresoftgram-service.herokuapp.com"
 
-URL = URL.replace('https://', '').replace('http://', '')
+if 'https://' in URL:
+    URL = URL.replace('https://', '')
+    conn = http.client.HTTPSConnection(URL)
 
-conn = http.client.HTTPSConnection(URL)
+elif 'http://' in URL:
+    URL = URL.replace('http://', '')
+    conn = http.client.HTTPConnection(URL)
+
 payload = ''
 headers = {}
 conn.request("GET", "/api/v1/organizations/1/repository/1/history/characteristics/", payload, headers)
@@ -541,9 +616,14 @@ URL = os.getenv('MSG_SERVICE')
 if not URL:
     URL = "measuresoftgram-service.herokuapp.com"
 
-URL = URL.replace('https://', '').replace('http://', '')
+if 'https://' in URL:
+    URL = URL.replace('https://', '')
+    conn = http.client.HTTPSConnection(URL)
 
-conn = http.client.HTTPSConnection(URL)
+elif 'http://' in URL:
+    URL = URL.replace('http://', '')
+    conn = http.client.HTTPConnection(URL)
+
 payload = ''
 headers = {}
 conn.request("GET", "/api/v1/organizations/1/repository/1/current-pre-config/", payload, headers)
@@ -567,8 +647,21 @@ print(json.dumps(data, indent=4))
 ```python
 import http.client
 import json
+import os
 
-conn = http.client.HTTPSConnection("measuresoftgram-service.herokuapp.com")
+URL = os.getenv('MSG_SERVICE')
+
+if not URL:
+    URL = "measuresoftgram-service.herokuapp.com"
+
+if 'https://' in URL:
+    URL = URL.replace('https://', '')
+    conn = http.client.HTTPSConnection(URL)
+
+elif 'http://' in URL:
+    URL = URL.replace('http://', '')
+    conn = http.client.HTTPConnection(URL)
+
 
 print("Digite um Token de acesso a API do Github:")
 print("Caso você não tenha um, crie um novo usando o seguinte link. Lembre-se o token criado não precisa de nenhuma permissão. Link: https://github.com/settings/tokens")
@@ -609,8 +702,22 @@ print(json.dumps(data, indent=4))
 ```python
 import http.client
 import json
+import os
 
-conn = http.client.HTTPSConnection("measuresoftgram-service.herokuapp.com")
+URL = os.getenv('MSG_SERVICE')
+
+if not URL:
+    URL = "measuresoftgram-service.herokuapp.com"
+
+if 'https://' in URL:
+    URL = URL.replace('https://', '')
+    conn = http.client.HTTPSConnection(URL)
+
+elif 'http://' in URL:
+    URL = URL.replace('http://', '')
+    conn = http.client.HTTPConnection(URL)
+
+
 payload = json.dumps({
   "metric_id": 78,
   "value": 14
@@ -634,8 +741,22 @@ print(json.dumps(data, indent=4))
 ```python
 import http.client
 import json
+import os
 
-conn = http.client.HTTPSConnection("measuresoftgram-service.herokuapp.com")
+URL = os.getenv('MSG_SERVICE')
+
+if not URL:
+    URL = "measuresoftgram-service.herokuapp.com"
+
+if 'https://' in URL:
+    URL = URL.replace('https://', '')
+    conn = http.client.HTTPSConnection(URL)
+
+elif 'http://' in URL:
+    URL = URL.replace('http://', '')
+    conn = http.client.HTTPConnection(URL)
+
+
 payload = json.dumps({
   "measures": [ { "key": "passed_tests" },
                 { "key": "test_builds" },
@@ -656,7 +777,6 @@ data = res.read().decode()
 data = json.loads(data)
 
 print(json.dumps(data, indent=4))
-
 ```
 
 <p align='center'>
@@ -674,16 +794,75 @@ print(json.dumps(data, indent=4))
 ```python
 import http.client
 import json
+import os
 
-conn = http.client.HTTPSConnection("measuresoftgram-service.herokuapp.com")
+URL = os.getenv('MSG_SERVICE')
+
+if not URL:
+    URL = "measuresoftgram-service.herokuapp.com"
+
+if 'https://' in URL:
+    URL = URL.replace('https://', '')
+    conn = http.client.HTTPSConnection(URL)
+
+elif 'http://' in URL:
+    URL = URL.replace('http://', '')
+    conn = http.client.HTTPConnection(URL)
+
+
 payload = json.dumps({
-  "measures": [ { "key": "testing_status" },
+  "subcharacteristics": [ { "key": "testing_status" },
                 { "key": "modifiability" } ]
 })
 headers = {
   'Content-Type': 'application/json'
 }
 conn.request("POST", "/api/v1/organizations/1/repository/1/calculate/subcharacteristics/", payload, headers)
+res = conn.getresponse()
+
+data = res.read().decode()
+data = json.loads(data)
+
+print(json.dumps(data, indent=4))
+```
+
+<p align='center'>
+    <img src='https://user-images.githubusercontent.com/31013187/183739602-499d3004-8f97-49b6-908f-edee08dccc1b.png'>
+    <figcaption align='center'>
+        <b align='center'>Figura 13: Resultado esperado 13</b>
+    </figcaption>
+</p>
+
+
+### Solicita o cálculo de uma determinada características para um determinado repositório
+
+```python
+import http.client
+import json
+import os
+
+URL = os.getenv('MSG_SERVICE')
+
+if not URL:
+    URL = "measuresoftgram-service.herokuapp.com"
+
+if 'https://' in URL:
+    URL = URL.replace('https://', '')
+    conn = http.client.HTTPSConnection(URL)
+
+elif 'http://' in URL:
+    URL = URL.replace('http://', '')
+    conn = http.client.HTTPConnection(URL)
+
+
+payload = json.dumps({
+  "characteristics": [ { "key": "maintainability" },
+                       { "key": "reliability" } ]
+})
+headers = {
+  'Content-Type': 'application/json'
+}
+conn.request("POST", "/api/v1/organizations/1/repository/1/calculate/characteristics/", payload, headers)
 res = conn.getresponse()
 
 data = res.read().decode()
