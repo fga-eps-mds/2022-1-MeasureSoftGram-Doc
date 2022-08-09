@@ -385,12 +385,193 @@ data = json.loads(data)
 print(json.dumps(data, indent=4))
 ```
 
+
 <p align='center'>
-    <img src='https://user-images.githubusercontent.com/31013187/183734093-03a38fc1-5fe3-4eac-9698-0418e16821ef.png'>
+    <img src='https://user-images.githubusercontent.com/31013187/183734798-d0cd1c62-e029-4ad5-90f8-39433b67f62e.png'>
     <figcaption align='center'>
-        <b align='center'>Figura 9: Resultado esperado 9</b>
+        <b align='center'>Figura 10: Resultado esperado 10</b>
     </figcaption>
 </p>
+
+
+
+
+### Apresenta a pré-configuração vigente de um repositório
+
+```python
+import http.client
+import json
+import os
+
+URL = os.getenv('MSG_SERVICE')
+
+if not URL:
+    URL = "measuresoftgram-service.herokuapp.com"
+
+URL = URL.replace('https://', '').replace('http://', '')
+
+conn = http.client.HTTPSConnection(URL)
+payload = ''
+headers = {}
+conn.request("GET", "/api/v1/organizations/1/repository/1/current-pre-config/", payload, headers)
+res = conn.getresponse()
+data = res.read().decode()
+data = json.loads(data)
+
+print(json.dumps(data, indent=4))
+```
+
+<p align='center'>
+    <img src='https://user-images.githubusercontent.com/31013187/183735147-10de168e-b367-4a51-899e-502169b2d03e.png'>
+    <figcaption align='center'>
+        <b align='center'>Figura 11: Resultado esperado 11</b>
+    </figcaption>
+</p>
+
+
+### Lista o histórico de valores coletados das métricas de um repositório
+
+```python
+import http.client
+import json
+import os
+
+URL = os.getenv('MSG_SERVICE')
+
+if not URL:
+    URL = "measuresoftgram-service.herokuapp.com"
+
+URL = URL.replace('https://', '').replace('http://', '')
+
+conn = http.client.HTTPSConnection(URL)
+payload = ''
+headers = {}
+conn.request("GET", "/api/v1/organizations/1/repository/1/history/metrics/", payload, headers)
+res = conn.getresponse()
+data = res.read().decode()
+data = json.loads(data)
+
+print(json.dumps(data, indent=4))
+```
+
+### Lista o histórico de valores calculados das medidas de um repositório
+
+```python
+import http.client
+import json
+import os
+
+URL = os.getenv('MSG_SERVICE')
+
+if not URL:
+    URL = "measuresoftgram-service.herokuapp.com"
+
+URL = URL.replace('https://', '').replace('http://', '')
+
+conn = http.client.HTTPSConnection(URL)
+payload = ''
+headers = {}
+conn.request("GET", "/api/v1/organizations/1/repository/1/history/measures/", payload, headers)
+res = conn.getresponse()
+data = res.read().decode()
+data = json.loads(data)
+
+print(json.dumps(data, indent=4))
+```
+
+### Lista o histórico de valores calculados das subcaracterísticas de um repositório
+
+```python
+import http.client
+import json
+import os
+
+URL = os.getenv('MSG_SERVICE')
+
+if not URL:
+    URL = "measuresoftgram-service.herokuapp.com"
+
+URL = URL.replace('https://', '').replace('http://', '')
+
+conn = http.client.HTTPSConnection(URL)
+payload = ''
+headers = {}
+conn.request("GET", "/api/v1/organizations/1/repository/1/history/subcharacteristics/", payload, headers)
+res = conn.getresponse()
+data = res.read().decode()
+data = json.loads(data)
+
+print(json.dumps(data, indent=4))
+```
+
+### Lista o histórico de valores calculados das características de um repositório
+
+```python
+import http.client
+import json
+import os
+
+URL = os.getenv('MSG_SERVICE')
+
+if not URL:
+    URL = "measuresoftgram-service.herokuapp.com"
+
+URL = URL.replace('https://', '').replace('http://', '')
+
+conn = http.client.HTTPSConnection(URL)
+payload = ''
+headers = {}
+conn.request("GET", "/api/v1/organizations/1/repository/1/history/characteristics/", payload, headers)
+res = conn.getresponse()
+data = res.read().decode()
+data = json.loads(data)
+
+print(json.dumps(data, indent=4))
+```
+
+### Recebe um arquivo do SonarQube para salvar como métricas de um repositório
+
+```python
+import http.client
+import json
+import os
+
+URL = os.getenv('MSG_SERVICE')
+
+if not URL:
+    URL = "measuresoftgram-service.herokuapp.com"
+
+URL = URL.replace('https://', '').replace('http://', '')
+
+conn = http.client.HTTPSConnection(URL)
+payload = ''
+headers = {}
+conn.request("GET", "/api/v1/organizations/1/repository/1/current-pre-config/", payload, headers)
+res = conn.getresponse()
+data = res.read().decode()
+data = json.loads(data)
+
+print(json.dumps(data, indent=4))
+```
+
+<p align='center'>
+    <img src='https://user-images.githubusercontent.com/31013187/183737211-532c1fe1-5994-4698-ad9a-1aecdd48e15d.png'>
+    <figcaption align='center'>
+        <b align='center'>Figura 11: Resultado esperado 11</b>
+    </figcaption>
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
