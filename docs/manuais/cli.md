@@ -108,7 +108,7 @@ Ele ignora os arquivos sem extensão _.json_ e inváilidos de acordo com o padr�
 
 Link de vídeo com uma visualização do uso: 
 
-- [Visualização do uso do comando `get` do CLI measuresoftgram](https://www.youtube.com/watch?v=nlQUNfBRwtI)
+- [Visualização do uso do comando `import` do CLI measuresoftgram](https://www.youtube.com/watch?v=nlQUNfBRwtI)
 <figcaption style="text-align: center">Vídeo 2. Vídeo sobre a funcionalidade 'import'</figcaption>
 
 #### Passo 1
