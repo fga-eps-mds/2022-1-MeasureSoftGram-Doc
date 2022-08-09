@@ -290,3 +290,108 @@ print(json.dumps(data, indent=4))
         <b align='center'>Figura 7: Resultado esperado 7</b>
     </figcaption>
 </p>
+
+
+### Lista o último valor das subcaracterísticas calculadas para um determinado repositório
+
+```python
+import http.client
+import json
+import os
+
+URL = os.getenv('MSG_SERVICE')
+
+if not URL:
+    URL = "measuresoftgram-service.herokuapp.com"
+
+URL = URL.replace('https://', '').replace('http://', '')
+
+conn = http.client.HTTPSConnection(URL)
+payload = ''
+headers = {}
+conn.request("GET", "/api/v1/organizations/1/repository/1/subcharacteristics/", payload, headers)
+res = conn.getresponse()
+data = res.read().decode()
+data = json.loads(data)
+
+print(json.dumps(data, indent=4))
+```
+
+<p align='center'>
+    <img src='https://user-images.githubusercontent.com/31013187/183733761-046a6fe0-5172-4832-9099-ccad72b5a5d4.png'>
+    <figcaption align='center'>
+        <b align='center'>Figura 8: Resultado esperado 8</b>
+    </figcaption>
+</p>
+
+
+
+### Lista o último valor das características calculadas para um determinado repositório
+
+```python
+import http.client
+import json
+import os
+
+URL = os.getenv('MSG_SERVICE')
+
+if not URL:
+    URL = "measuresoftgram-service.herokuapp.com"
+
+URL = URL.replace('https://', '').replace('http://', '')
+
+conn = http.client.HTTPSConnection(URL)
+payload = ''
+headers = {}
+conn.request("GET", "/api/v1/organizations/1/repository/1/characteristics/", payload, headers)
+res = conn.getresponse()
+data = res.read().decode()
+data = json.loads(data)
+
+print(json.dumps(data, indent=4))
+```
+
+<p align='center'>
+    <img src='https://user-images.githubusercontent.com/31013187/183734093-03a38fc1-5fe3-4eac-9698-0418e16821ef.png'>
+    <figcaption align='center'>
+        <b align='center'>Figura 9: Resultado esperado 9</b>
+    </figcaption>
+</p>
+
+
+
+### Lista os valores calculados do SQC em ordem decrescente (do mais recente para o mais antigo)
+
+```python
+import http.client
+import json
+import os
+
+URL = os.getenv('MSG_SERVICE')
+
+if not URL:
+    URL = "measuresoftgram-service.herokuapp.com"
+
+URL = URL.replace('https://', '').replace('http://', '')
+
+conn = http.client.HTTPSConnection(URL)
+payload = ''
+headers = {}
+conn.request("GET", "/api/v1/organizations/1/repository/1/sqc/", payload, headers)
+res = conn.getresponse()
+data = res.read().decode()
+data = json.loads(data)
+
+print(json.dumps(data, indent=4))
+```
+
+<p align='center'>
+    <img src='https://user-images.githubusercontent.com/31013187/183734093-03a38fc1-5fe3-4eac-9698-0418e16821ef.png'>
+    <figcaption align='center'>
+        <b align='center'>Figura 9: Resultado esperado 9</b>
+    </figcaption>
+</p>
+
+
+
+
