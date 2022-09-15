@@ -5,6 +5,7 @@
 | Data | Autor | Descrição da revisão | Versão |
 | :--: | :---: | :------------------: | :----: |
 | 09 de agosto de 2022 | **Lucas Boaventura** | Criação do documento | 1.0.0 |
+| 15 de setembro de 2022 | **Daniel Primo** | Revisão do documento | 1.0.1 |
 
 Passo a passo para teste das novas funcionalidades da CLI entregues até a R1.
 
@@ -48,6 +49,7 @@ Link de vídeo com uma visualização do uso:
   - _--history_: O histórico das _metrics_ ou _measures_ (ainda finalizando a implementação).
   - _--organization-id_: Para especificar de qual organização está sendo buscado os dados.
   - _--repository-id_:  Para especificar de qual repositório está sendo buscado os dados.
+  - _--product-id_:  Para especificar de qual produto está sendo buscado os dados.
 
 #### Passo 2
 
@@ -121,6 +123,7 @@ Link de vídeo com uma visualização do uso:
   - _--host_: O host do service, caso seja necessário.
   - _--organization-id_: Para especificar de qual organização está sendo buscado os dados.
   - _--repository-id_:  Para especificar de qual repositório está sendo buscado os dados.
+  - _--product-id_:  Para especificar de qual produto está sendo buscado os dados.
 
 #### Passo 2
 
