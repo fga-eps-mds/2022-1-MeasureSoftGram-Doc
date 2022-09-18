@@ -55,10 +55,10 @@ measuresoftgram init --help
 measuresoftgram init <FILE_PATH>
 ```
 
-    ![Imagem do comando measuresoftgram init](https://cdn.discordapp.com/attachments/1020837143792341075/1020841016342892614/Screenshot_from_2022-09-17_20-37-28.png)
+    ![Imagem do comando measuresoftgram init](https://cdn.discordapp.com/attachments/1020837143792341075/1020864130988654682/Screenshot_from_2022-09-17_22-09-23.png)
     <figcaption style="text-align: center">Imagem 2. Exemplo do comando 'measuresoftgram init' da CLI</figcaption>
 
-- Caso o comando funcione corretamente, assim como no exemplo da Imagem 2, é esperado que seja criado o arquivo _.measuresoftgram_ na mesmo diretório em que a CLI esteja rodando. O arquivo criado segue o padrão abaixo:
+- Caso o comando funcione corretamente, assim como no exemplo da Imagem 2, é esperado que seja criado o arquivo _.measuresoftgram_ no mesmo diretório em que a CLI esteja rodando. O arquivo criado segue o padrão abaixo:
 
 ```json
 {
