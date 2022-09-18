@@ -30,4 +30,6 @@
 
 - [**Manuais de uso**](/manuais/service_e_core.md)
   - [**Service e Core**](/manuais/service_e_core.md)
-  - [**CLI**](/manuais/cli.md)
+  - [**CLI**](/manuais/CLI/release_1.md)
+    - [**Release 1**](/manuais/CLI/release_1.md)
+    - [**Comando init**](/manuais/CLI/init.md)
