@@ -1,0 +1,51 @@
+version: "3.8"
+
+
+services:
+
+  db:
+    container_name: measuresoftgram-service-db
+    image: postgres:latest
+    restart: on-failure
+    ports:
+      - "5432:5432"
+    env_file:
+      - ./service/env-vars/.postgres.env
+
+  service:
+    container_name: measuresoftgram-service
+    restart: on-failure
+    build:
+      context: ./service/
+      dockerfile: ./docker/service.Dockerfile
+    command: ["./start_service.sh"]
+    volumes:
+      - ./service/src:/src
+    ports:
+      - "8080:80"
+    env_file:
+      - ./service/env-vars/.service.env
+      - ./service/env-vars/.postgres.env
+    depends_on:
+      - db
+
+  core:
+    container_name: measuresoftgram-core
+    build: ./core/
+    restart: on-failure
+    volumes:
+      - ./core/src:/code/src
+      - ./core/server.py:/code/server.py
+    environment:
+      - DEBUG=True
+
+  front:
+    container_name: measuresoftgram-front
+    restart: on-failure
+    build:
+      context: ./front/
+      dockerfile: ./docker/front.Dockerfile
+    volumes:
+      - ./front/:/usr/src/
+    ports:
+      - '3000:3000'
